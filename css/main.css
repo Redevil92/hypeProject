@@ -215,3 +215,8 @@ hr{
     margin-bottom: 30px;
     color: darkgray;
 }
+
+button{
+    align-items:center;
+    margin-top: 30px;
+}
