@@ -1,5 +1,29 @@
 /* BODY */
 
+/* BODY */
+
+/* UTILITIES */
+
+.breadcrumb {
+    height: 50px;
+    width: 100%;
+    background-color: azure;
+    padding: 0;
+    margin: 0;
+}
+
+.breadcrumb > a:link, a:focus {
+    text-decoration: none;
+    color: red;
+}
+
+.breadcrumb > a:hover, a:active {
+    text-decoration: none;
+    color: aqua;
+}
+
+
+
 #topimage {
     background-image: url(../images/TIM_homepageimg.png);
     background-repeat: no-repeat;
@@ -8,7 +32,7 @@
     width: 100%;
     padding: 0;
     margin: 0;
-    height: 400px;
+    height: 200px;
 }
 
 #middleimagesx {
@@ -34,11 +58,11 @@
 }
 
 #lowerimagesx {
-    background-image: url(../images/TIM_children.png);
+    background-image: url(../images/TIM_smart_living.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: auto;
+    width: 100%;
     padding: 0;
     margin: 0;
     height: 500px;
@@ -55,16 +79,66 @@
     height: 500px;
 }
 
-h2 {
-    font-family: "Calibri";
-    font-size: 75px;
-    padding-top: 155px;
+#bottomimagesx {
+    background-image: url(../images/TIM_fiber.png);
 }
 
-#imgpar {
-    font-family: "Calibri";
+#bottomimagemid {
+    background-image: url(../images/TIM_fiber.png);
+}
+
+#bottomimagedx {
+    background-image: url(../images/TIM_fiber.png);
+}
+
+#toplogo {
+    /*font-family: "Calibri";*/
+    font-size: 40px;
+    margin-top: 50px;
+    color: midnightblue;
+}
+
+.toplogo-hover {
+    background-color: aliceblue;
+    opacity: 0.4;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    text-decoration: none;
+}
+
+.imgpar {
+    display: none;
+    /*font-family: "Calibri";*/
     text-rendering: geometricPrecision;
     text-emphasis: none;
 }
 
-/* END_BODY */
+.bright {
+    color: linen;
+}
+
+.row .col-sm-4 .panel .panel-body > h1,
+.row .col-sm-6 .panel .panel-body > h1,
+.row .col-sm-8 .panel .panel-body > h1 {
+    font-size: 60px;
+    padding-top: 25px;
+}
+
+.row .col-sm-4 .panel .panel-body,
+.row .col-sm-8 .panel .panel-body {
+    vertical-align: middle;
+    margin-top: 100px;
+}
+
+/*.container-fluid .row .col-sm-12 .panel .panel-body > a:hover {
+    background-color: blanchedalmond;
+}*/
+
+.half-dimensioned {
+    width: 50%;
+}
+
+.right-aligned {
+    object-position: right;
+    margin-left: 50%;
+}
