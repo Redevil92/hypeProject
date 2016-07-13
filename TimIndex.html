@@ -2,35 +2,24 @@
 <html>
 <head>
     <title>TIM website</title>
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $(".imgpar").fadeIn(1000)
-            $("#toplogo").hover(function() {
-                $(this).addClass("toplogo-hover");
-            }, function() {
-                $(this).removeClass("toplogo-hover");
-            })
-        });
-    </script>
-    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
     <script>
         $(function(){
             //load the TimHeader
             $("#header").load("TimHeader.html");
 
             //as default behaviour load the home page
-            $(".main").load( "TimHome.html", function() {
-                // after loading the page we should load the page manager for links (header + main div, footer doesn't contain links)
-                $.getScript('js/pageManager.js', function() {
+            $("#main").load("TimHome.html"); //, function() {
+               // after loading the page we should load the page manager for links (header + main div, footer doesn't contain links)
+               // $.getScript('js/pageManager.js', function() {
                     // load dynamic links (index.html)
-                    clickPageLinks();
-                });
+                 //   clickPageLinks();
+               // });
 
 
             $("#footer").load("TimFooter.html");
@@ -38,8 +27,8 @@
     </script>
 </head>
 <body>
-<div id="header"></div>
-<!--Remaining section-->
-<div id="footer"></div>
+    <div id="header"></div>
+    <div id="main"></div>
+    <div id="footer"></div>
 </body>
 </html>
