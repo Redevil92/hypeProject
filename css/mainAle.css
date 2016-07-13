@@ -1,0 +1,85 @@
+/* HEADER */
+
+.jumbotron {
+    margin: 0;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.jumbotron > img {
+    height: 50px;
+}
+
+.navbar {
+    background-color: #004990;
+    border-radius: 0;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #ffffff;
+    background-color: #0078c1;
+}
+
+#nav_header {
+    padding: 0;
+    margin: 0;
+}
+
+#nav_header > ul > li:hover > a {
+    background-color: #0078c1;
+}
+
+#nav_header > ul > li.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+    border-color: #0078c1;
+    border-style: dashed;
+}
+
+#nav_header > ul > li > a {
+    color: #fff;
+}
+
+#nav_header > ul > li > ul.dropdown-menu {
+    background-color: #004990;
+}
+
+#nav_header > ul > li > ul.dropdown-menu > li:hover > a {
+    background-color: #0078c1;
+}
+
+#nav_header > ul > li > ul.dropdown-menu > li > a {
+    color: #ffffff;
+}
+
+.affix {
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.affix + .container {
+    padding-top: 100px;
+}
+
+/* END HEADER */
+
+/* FOOTER */
+
+/* Add a gray background color and some padding to the footer */
+footer {
+    background-color: #004990;
+    padding: 5px;
+    clear: both;
+
+}
+
+footer > p {
+    color: #ffffff;
+    padding: 0;
+    margin: 0;
+}
+
+/* END FOOTER */

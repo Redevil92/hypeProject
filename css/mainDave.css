@@ -1,0 +1,70 @@
+/* BODY */
+
+#topimage {
+    background-image: url(../images/TIM_homepageimg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 400px;
+}
+
+#middleimagesx {
+    background-image: url(../images/TIM_manatthephone.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: auto;
+    padding: 0;
+    margin: 0;
+    height: 500px;
+}
+
+#middleimagedx {
+    background-image: url(../images/TIM_phonecharging.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: auto;
+    padding: 0;
+    margin: 0;
+    height: 500px;
+}
+
+#lowerimagesx {
+    background-image: url(../images/TIM_children.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: auto;
+    padding: 0;
+    margin: 0;
+    height: 500px;
+}
+
+#lowerimagedx {
+    background-image: url(../images/TIM_fiber.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: auto;
+    padding: 0;
+    margin: 0;
+    height: 500px;
+}
+
+h2 {
+    font-family: "Calibri";
+    font-size: 75px;
+    padding-top: 155px;
+}
+
+#imgpar {
+    font-family: "Calibri";
+    text-rendering: geometricPrecision;
+    text-emphasis: none;
+}
+
+/* END_BODY */
