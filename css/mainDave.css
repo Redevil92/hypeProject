@@ -12,7 +12,7 @@
     margin: 0;
 }
 
-.breadcrumb > a:link, a:focus {
+.breadcrumb > a:link, a:visited {
     text-decoration: none;
     color: red;
 }
@@ -20,6 +20,10 @@
 .breadcrumb > a:hover, a:active {
     text-decoration: none;
     color: aqua;
+}
+
+.breadpar {
+   font-size: 100px;
 }
 
 
