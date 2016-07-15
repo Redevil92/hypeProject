@@ -22,11 +22,10 @@
     color: aqua;
 }
 
-.breadpar {
-   font-size: 100px;
+.intestation {
+    margin: 0;
+    padding: 0;
 }
-
-
 
 #topimage {
     background-image: url(../images/TIM_homepageimg.png);
