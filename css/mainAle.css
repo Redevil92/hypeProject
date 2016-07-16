@@ -83,3 +83,22 @@ footer > p {
 }
 
 /* END FOOTER */
+
+/* ASSISTENZA */
+
+/* MAXI CATEGORIE ASSISTENZA */
+
+#assistenza_category > h4 {
+    padding-bottom: 2px;
+    padding-top: 14px;
+    margin: 0;
+}
+
+#assistenza_category > h2 {
+    padding-bottom: 3px;
+    margin: 0;
+}
+
+#assistenza_category {
+
+}
