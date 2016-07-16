@@ -1,18 +1,20 @@
 /* HEADER */
 
-.jumbotron {
+#jumbotron_logo {
     margin: 0;
     padding: 10px;
     background-color: #f9f9f9;
 }
 
-.jumbotron > img {
+#jumbotron_logo > img {
     height: 50px;
 }
 
 .navbar {
     background-color: #004990;
     border-radius: 0;
+    padding:0;
+    margin:0;
 }
 
 .navbar-default .navbar-nav > .active > a,
@@ -77,7 +79,6 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
-
 }
 
 footer > p {
@@ -103,6 +104,50 @@ footer > p {
     margin: 0;
 }
 
-#assistenza_category {
+#assistenza_category > hr {
+    border-width: 3px;
+    border-top-color: #d9edf7;
+}
 
+/* END ASSISTENZA */
+
+/* INTESTAZIONE */
+
+#jumbotron_heading {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+#heading_col_left {
+    width: 30%;
+}
+
+#heading_col_left > img {
+    width: 80%;
+}
+
+#p_title{
+    font-size: 40px;
+    font-weight: 800;
+    padding-top: 30px;
+    padding-bottom: 3px;
+    padding-left: 5px;
+    margin: 0;
+}
+
+#p_subtitle {
+    font-size: 25px;
+    padding-left: 5px;
+}
+
+#breadcrumb {
+    background-color: #d9edf7;
+}
+
+#breadcrumb > p {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 8px;
+    font-size: 15px;
 }

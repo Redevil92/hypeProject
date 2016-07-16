@@ -1,35 +1,14 @@
-$(document).ready(ready);
-
-function ready(){
-
-    getLineaServizi();
-
-}
-
-/**
-function getMaxCategory() {
-    var id = '';
-    var check = document.location.pathname.toString();
-    switch(check){
-        case "Assistenza_GestioneLineaServizi.html":
-            id = 'Gestione linea e servizi';
-            break;
-        default:
-            break;
-    }
-    return id;
-}**/
+$(document).ready(getLineaServizi());
 
 function getLineaServizi(){
 
     $.ajax({
         method: "POST",
-        //dataType: "json", //type of data
         crossDomain: true, //localhost purposes
         url: "php/getAssistenza_GestioneLineaServizi.php", //Relative or absolute path to file.php file
         success: function(response){
             var assistance = JSON.parse(response);
-            var output = "";
+            var output = "<hr>";
 
             //Selecting distinct values from 'Categoria'
 
@@ -82,6 +61,8 @@ function getLineaServizi(){
                 output+="<hr>";
             }
 
+            $("#p_subtitle").html("Gestione linea e servizi");
+            $("#current_path").html("Gestione linea e servizi");
             $("#assistenza_category").html(output);
 
         },
