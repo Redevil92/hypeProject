@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TIM website</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/mainAle.css">
+    <link rel="stylesheet" type="text/css" href="css/mainDave.css">
+    <link rel="stylesheet" type="text/css" href="css/mainSte.css">
+    <script>
+        $(function(){
+            //load the TimHeader
+            $("#header").load("TimHeader.html");
+
+            //load the TimFooter
+            $("#footer").load("TimFooter.html");
+        });
+    </script>
+</head>
+<body>
+    <div id="header"></div>
+
+<!-- -- EFFECTIVE BODY -- -->
+
+    <div class = "intestation">
+        <div class = "row">
+            <div class = "col-sm-3">
+                <img src = "images/TIM_children_tv.jpg" alt = "devices" class = "intestation_images">
+            </div>
+            <div class = "col-sm-9">
+                <h3 id = "title_intestation">TV &amp; SmartLiving</h3>
+                <h4 id = "minimal_description">Acquista televisori, video e audio con TIM</h4>
+            </div>
+        </div>
+        <div class = "source" >
+            <p class = "breadpar">
+                <a href ="TimIndex.html"><bs>Home</bs></a>
+                 > 
+                <a href="Tim_Devices.html">Prodotti</a>
+                 > TV &amp; SmartLiving
+            <p/>
+        </div>
+    </div>
+    <div id="content_device_smartliving" class="container-fluid">    
+   
+        <!-- CONTENT GOES THERE -->
+    
+    </div><br><br>
+
+<!-- -- END EFFECTIVE BODY -- -->
+    
+    <div id="footer"></div>
+    <script src="js/LoadSmartproducts.js"></script>
+</body>
+</html>
