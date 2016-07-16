@@ -27,6 +27,10 @@
     padding: 0;
 }
 
+/* STOP UTILITIES */
+
+/* HOME PAGE */
+
 #topimage {
     background-image: url(../images/TIM_homepageimg.png);
     background-repeat: no-repeat;
@@ -144,4 +148,22 @@
 .right-aligned {
     object-position: right;
     margin-left: 50%;
+}
+
+/* STOP HOME PAGE */
+
+.title_brand {
+    font-weight: bold;
+}
+
+.imglist {
+    text-align: left;
+    width: 250px;
+    height: 250px;
+}
+
+.title_paragraph {
+    font-size: 25px;
+    font-style: italic;
+    opacity: 0.8;
 }
