@@ -71,7 +71,7 @@ function getLineaServizi2() {
             console.log(response);
 
             for (var i = 1; i < smartLife.length; i++) {
-                output += "<div style='margin-top: 20px'>" +
+                output += "<div style='margin-top: 20px; border: solid 1px gray; margin: 10%;'>" +
                             "<div class='row'>" +
                                 "<div class='col-sm-2'></div>" +
                                     "<div class='col-sm-4'>" +
