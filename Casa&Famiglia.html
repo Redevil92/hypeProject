@@ -128,16 +128,9 @@
         <div class = "col-sm-2">
         </div>
         <div class = "col-sm-4">
-            <h3 style="color: lightblue; align-content: center">
-                TIM TAG
-            </h3>
-            <h5>
-                TIMTag è il dispositivo che ti informa sulla posizione del tuo amico a quattro zampe
-                e delle cose a te più care.<br>
-                Segui in tempo reale i suoi spostamenti sul tuo smartphone senza perderlo di vista.<br>
-                Con TIMTag hai un dispositivo di localizzazione GPS di ultima generazione, con 12 mesi
-                di servizio TIMTag e una card inclusa con l'app dedicata intuitiva da utilizzare!
-            </h5>
+            <h3 id ="casa_tit" style="color: lightblue; align-content: center"></h3>
+            <h4 id="casa_des_vel"></h4>
+            <h5 id="casa_des"></h5>
         </div>
         <div class = "col-sm-4">
             <img src = "images/product:smart.png" class = "intestation_images"   >
@@ -200,7 +193,7 @@
     <div class = "row">
         <div class="col-sm-4"></div>
         <div class="col-sm-2">
-            <button type="button" class="btn btn-primary" style="margin-left: auto; margin-right: auto;" >SCOPRI I DETTAGLI</button>
+            <button type="button" class="btn btn-primary" style="margin-left: 45%" >SCOPRI I DETTAGLI</button>
         </div>
         <div class = "col-sm-4"></div>
     </div>
@@ -208,9 +201,10 @@
 
 </div>
 
-<div>
-    <p id="test">CIAO qua il dataset:<br></p>
+<div id="casa_all">
+    <!--all the remaining data are taken by javascript from the database-->
 </div>
+
 
 
 
@@ -220,7 +214,7 @@
     <p>&copy; Telecom Italia 2016 - P.IVA 00488410010</p>
 </footer>
 
-<script scr = "Prova1;.js"></script>
+<script src = "js/load_casa&famiglia.js"></script>
 
 </body>
 </html>
