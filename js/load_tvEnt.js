@@ -3,6 +3,7 @@ $(document).ready(ready);
 function ready(){
 
     getTvEnt();
+    getTvSerieAInfo();
 
 
 }
@@ -52,6 +53,35 @@ function getTvEnt() {
             }
 
             $("#tvEnt_all").html(output);
+
+
+        },
+
+        error: function (request, error) {
+            console.log("Error");
+        }
+
+    });
+}
+
+function getTvSerieAInfo() {
+
+    $.ajax({
+        method: "POST",
+        //dataType: "json", //type of data
+        crossDomain: true, //localhost purposes
+        url: "php/getTvEnt.php", //Relative or absolute path to file.php file
+        success: function (response) {
+            var smartLife = JSON.parse(response);
+            var output = "";
+
+
+            console.log(response);
+
+
+            output += "<div><h4 style='margin: 4%'>"+smartLife[1].Info+"</h4>></div>";
+
+            $("#SerieATimInfo").html(output);
 
 
         },
