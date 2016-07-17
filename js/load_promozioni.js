@@ -5,6 +5,7 @@ function ready(){
     getPromozioneFisso();
     getPromMobile();
     getPromMobileFisso();
+    getSmartProm();
 
 
 }
@@ -206,3 +207,57 @@ function getPromMobileFisso() {
     });
 }
 
+function getSmartProm() {
+
+    $.ajax({
+        method: "POST",
+        //dataType: "json", //type of data
+        crossDomain: true, //localhost purposes
+        url: "php/load_promozioni.php", //Relative or absolute path to file.php file
+        success: function (response) {
+            var promozioni = JSON.parse(response);
+            var output = "";
+
+            var prom_smart = new Array();
+            var j = 0;
+
+            for(var i = 0; i < promozioni.length; i++){
+                if(promozioni[i].Pagina == ("SmartLife"))
+                    prom_smart[j++] = promozioni[i];
+            }
+
+
+            console.log(response);
+
+            for (var i = 0; i < prom_smart.length; i++) {
+                output += "<div  style='margin-top: 20px;  margin: 1%;'>" +
+                    "<div class='row'>" +
+                    "<div class='col-sm-1'></div>" +
+                    "<div class='col-sm-5'>" +
+                    "<h3 style='color: lightblue; align-content: center'>" + prom_smart[i].NomePromozione + "</h3>" +
+                    "<h4>" + prom_smart[i].Descrizione + "</h4>";
+                if(i == 0){
+                    output += "<h4 style='margin: auto; color: lightblue'>Un Goal tira l'altro!</h4>" +
+                        "<h5 style='margin: auto'>Guarda i tutti i video-goal, le video-sintesi, video-news e " +
+                        "i video tg del campionato di Calcio di Serie A</h5> ";
+                }
+                output +="<button type='button' class='btn btn-primary' style='margin-left: 20%; margin-bottom: 10px' >SCOPRI TUTTI DETTAGLI</button>";
+
+                output += "</div><div class = 'col-sm-5'>" +
+                    "<img src=" + prom_smart[i].Immagine + "></div><div class='col-sm-1'></div></div>" +
+                    "</div>";
+
+
+            }
+
+            $("#prom_smart").html(output);
+
+
+        },
+
+        error: function (request, error) {
+            console.log("Error");
+        }
+
+    });
+}
