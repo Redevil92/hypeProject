@@ -91,7 +91,7 @@ footer > p {
 
 /* ASSISTENZA */
 
-/* MAXI CATEGORIE ASSISTENZA */
+/* MAXI CATEGORIE ASSISTENZA / HIGHLIGHTS */
 
 #assistenza_category > h4 {
     padding-bottom: 2px;
@@ -151,3 +151,28 @@ footer > p {
     padding-left: 8px;
     font-size: 15px;
 }
+
+#current_path {
+    color: black;
+    text-decoration: none;
+}
+
+/* END INTESTAZIONE */
+
+/* HIGHLIGHTS */
+.hl_left {
+    padding: 0;
+    margin: 0;
+    text-align: right;
+    width: 40%;
+    font-size: 20px;
+}
+
+.hl_right{
+    padding-left: 1em;
+    margin: 0;
+    text-align: left;
+    font-size: 20px;
+}
+
+/* END HIGHLIGHTS */
