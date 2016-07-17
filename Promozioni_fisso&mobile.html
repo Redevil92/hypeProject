@@ -1,0 +1,66 @@
+<head>
+    <title>TIM website</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/mainAle.css">
+    <link rel="stylesheet" type="text/css" href="css/mainDave.css">
+    <link rel="stylesheet" type="text/css" href="css/mainSte.css">
+    <script>
+        $(function(){
+            //load the TimHeader
+            $("#header").load("TimHeader.html");
+
+            //load the TimFooter
+            $("#footer").load("TimFooter.html");
+        });
+    </script>
+</head>
+<body>
+
+<!-- DYNAMIC CONTENT LOADING -->
+
+<div id="header"></div>
+<!-- -- EFFECTIVE BODY -- -->
+
+
+
+
+
+
+
+
+
+
+
+<!--The intestation of the pages -->
+
+<div class = "intestation">
+    <div class = "row">
+        <div class = "col-sm-4">
+            <img src = "images/product:smart.png" class = "intestation_images"  width="300" height="200" >
+        </div>
+        <div class = "col-sm-8">
+            <h3 id = "title_intestation">Mobile più Fisso</h3>
+            <h4 id = "minimal_description">Tutto insieme, con la semplicità e la convenienza di un unico conto.
+            </h4>
+        </div>
+    </div>
+</div>
+<div class = "source" >
+    <p ></p><a>Home</a><bs> ></bs><a> Promozioni </a> > Mobile più Fisso<p/>
+</div>
+
+
+<div id="prom_fisso_mobile"></div>
+
+
+<script src = "js/load_promozioni.js"></script>
+
+<div id="footer"></div>
+
+
+</body>
+</html>
