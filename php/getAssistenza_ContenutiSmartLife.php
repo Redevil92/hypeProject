@@ -10,7 +10,7 @@ if (mysqli_connect_errno()) { //verify connection
 else
 {
     # extract results mysqli_result::fetch_array
-    $query = " SELECT * FROM assistenza WHERE MaxiCategoria = 'Gestione linea e servizi'";
+    $query = " SELECT * FROM assistenza WHERE MaxiCategoria = 'Smart Life'";
     //query execution
     $result = $mysqli->query($query);
     //if there are data available

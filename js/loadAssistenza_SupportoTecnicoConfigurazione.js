@@ -1,11 +1,11 @@
-$(document).ready(getLineaServizi());
+$(document).ready(getSupportoTecnico());
 
-function getLineaServizi(){
+function getSupportoTecnico(){
 
     $.ajax({
         method: "POST",
         crossDomain: true, //localhost purposes
-        url: "php/getAssistenza_GestioneLineaServizi.php", //Relative or absolute path to file.php file
+        url: "php/getAssistenza_SupportoTecnicoConfigurazione.php", //Relative or absolute path to file.php file
         success: function(response){
             var assistance = JSON.parse(response);
             var output = "<hr>";
