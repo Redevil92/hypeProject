@@ -1,7 +1,11 @@
 $(document).ready(function(){
     $("#header").load("TimHeader.html");
     $("#footer").load("TimFooter.html");
-    $("#jumbotron_heading").load("Assistenza_Heading.html");
+    $("#heading").load("TimHeading.html", function () {
+        $("#heading_col_left").html("<img class='img-responsive' src='images/assistenza_intro.jpg'>");
+        $("#p_title").html("Assistenza");
+        $("#my_breadcrumb").html("<li><a href='TimIndex.html'>Home</a></li><li><a href=''>Assistenza</a></li><li><a href='#' id='current_path'></a></li>");
+    });
     findMaxCategory();
 });
 
@@ -83,7 +87,7 @@ function getMaxCategory(max_cat){
                     for(var i=0; i<assistance.length; i++){
                         if(result2[k]==assistance[i].SottoCategoria){
 
-                            output+="<a>" + assistance[i].Descrizione + "</a><br>";  //Print 'Descrizione'
+                            output+="<a href='#'>" + assistance[i].Descrizione + "</a><br>";  //Print 'Descrizione'
 
                         }
                     }

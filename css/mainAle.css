@@ -36,8 +36,7 @@
 #nav_header > ul > li.dropdown:hover .dropdown-menu {
     display: block;
     margin-top: 0;
-    border-color: #0078c1;
-    border-style: dashed;
+    border-color: #d9edf7;
 }
 
 #nav_header > ul > li > a {
@@ -48,6 +47,9 @@
     background-color: #004990;
 }
 
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:focus,
+.navbar-default .navbar-nav>.open>a:hover,
 #nav_header > ul > li > ul.dropdown-menu > li:hover > a {
     background-color: #0078c1;
 }
@@ -56,12 +58,24 @@
     color: #ffffff;
 }
 
+.navbar-default .navbar-toggle {
+    border-color: white;
+}
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+    background-color: #d9edf7;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
+
 /* END HEADER */
 
 /* FOOTER */
 
 /* Add a gray background color and some padding to the footer */
-footer {
+#my_footer {
     background-color: #004990;
     padding: 5px;
     clear: both;
@@ -71,7 +85,7 @@ footer {
     right: 0;
 }
 
-footer > p {
+#my_footer > p {
     color: #ffffff;
     padding: 0;
     margin: 0;
@@ -99,11 +113,15 @@ footer > p {
     border-top-color: #d9edf7;
 }
 
+#assistenza_category > a:visited {
+    color: #337ab7;
+}
+
 /* END ASSISTENZA */
 
 /* INTESTAZIONE */
 
-#jumbotron_heading {
+#heading {
     margin: 0;
     padding: 0;
     background-color: white;
@@ -147,13 +165,6 @@ footer > p {
     color: #337ab7;
 }
 
-/*
-#current_path {
-    color: black;
-    text-decoration: none;
-}
-*/
-
 /* END INTESTAZIONE */
 
 /* HIGHLIGHTS */
@@ -174,30 +185,35 @@ footer > p {
 
 /* END HIGHLIGHTS */
 
-/* PROGETTI */
+/* PROGETTI-INNOVAZIONI */
 
 #pro_inn_container > hr {
     border-width: 3px;
     border-top-color: #d9edf7;
 }
 
-#pro_inn_container > div.row > div.col-sm-3 > img {
-    height: 200px;
-    width: 240px;
+#pro_inn_container > div.row > div.col-sm-6 > img {
+    height: 300px;
+    width: 440px;
+    float: right;
+    padding-right: 1em;
 }
 
-#pro_inn_container > div.row > div.col-sm-6 > p.pro_inn_subtitle,
-#pro_inn_container > div.row > div.col-sm-3 > p.pro_inn_subtitle {
+#pro_inn_container > div.row > div.col-sm-6 {
+    float: left;
+    padding-left: 1em;
+}
+
+#pro_inn_container > div.row > div.col-sm-6 > p.pro_inn_subtitle{
     font-size: 25px;
     color: #ed1c24;
 }
 
-#pro_inn_container > div.row > div.col-sm-3 > p.pro_inn_descrizione {
-    font-size: 15px;
+#pro_inn_container > div.row > div.col-sm-6 > p.pro_inn_descrizione {
+    font-size: 17px;
 }
 
-#pro_inn_container > div.row > div.col-sm-6 > a:visited,
-#pro_inn_container > div.row > div.col-sm-3 > a:visited {
+#pro_inn_container > div.row > div.col-sm-6 > a:visited {
     color: #337ab7;
 }
 
@@ -205,14 +221,6 @@ footer > p {
     float: right;
 }
 
-/* END PROGETTI */
+/* END PROGETTI-INNOVAZIONI */
 
-/* INNOVAZIONI */
 
-#pro_inn_container > div.row > div.col-sm-6 > img {
-    height: 300px;
-    width: 440px;
-}
-#pro_inn_container > div.row > div.col-sm-6 > p.pro_inn_descrizione {
-    font-size: 17px;
-}
