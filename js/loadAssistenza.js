@@ -1,11 +1,40 @@
-$(document).ready(getCostiPagamenti());
+$(document).ready(function(){
+    $("#header").load("TimHeader.html");
+    $("#footer").load("TimFooter.html");
+    $("#jumbotron_heading").load("Assistenza_Heading.html"), findMaxCategory()
+});
 
-function getCostiPagamenti(){
+function findMaxCategory() {
+    var url = window.location.href;
+    var test = url.split('?')[1];
+    var max_cat = 'test';
+    switch(test){
+        case 'linea_servizi':
+            max_cat = 'Gestione linea e servizi';
+            break;
+        case 'costi_pagamenti':
+            max_cat = 'Controllo costi e pagamenti';
+            break;
+        case 'tecnico_configurazione':
+            max_cat = 'Supporto tecnico e configurazione';
+            break;
+        case 'smart_life':
+            max_cat = 'Smart Life';
+            break;
+        default:
+            break;
+    }
+    console.log(max_cat);
+    getMaxCategory(max_cat);
+}
+
+function getMaxCategory(max_cat){
 
     $.ajax({
         method: "POST",
         crossDomain: true, //localhost purposes
-        url: "php/getAssistenza_ControlloCostiPagamenti.php", //Relative or absolute path to file.php file
+        data: {max_cat : max_cat},
+        url: "php/getAssistenza.php", //Relative or absolute path to file.php file
         success: function(response){
             var assistance = JSON.parse(response);
             var output = "<hr>";
@@ -61,6 +90,8 @@ function getCostiPagamenti(){
                 output+="<hr>";
             }
 
+            $("#p_subtitle").html(max_cat);
+            $("#current_path").html(max_cat);
             $("#assistenza_category").html(output);
 
         },

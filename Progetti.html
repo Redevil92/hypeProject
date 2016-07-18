@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>TIM Website</title>
+
+    <!-- Meta -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- JQuery & Bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <!-- Personal CSS -->
+    <link rel="stylesheet" type="text/css" href="css/mainAle.css">
+    <link rel="stylesheet" type="text/css" href="css/mainDave.css">
+    <link rel="stylesheet" type="text/css" href="css/mainSte.css">
+
+    <!-- Loading pages -->
+    <script>
+        $(function(){
+            $("#header").load("TimHeader.html");
+            $("#footer").load("TimFooter.html");
+        });
+    </script>
+
+</head>
+
+<body>
+
+<!-- Header -->
+<div id="header"></div>
+
+<!-- Heading -->
+<div class="jumbotron" id="jumbotron_heading">
+    <div class="row">
+        <div class="col-sm-6" id="heading_col_left">
+            <img src="images/progetti_intro.png">
+        </div>
+        <div class="col-sm-6" id="heading_col_right">
+            <p id="p_title">Progetti</p>
+            <p id="p_subtitle">Il cantiere delle nostre idee</p>
+        </div>
+    </div>
+    <ul class="breadcrumb" id="my_breadcrumb">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Chi siamo</a></li>
+        <li><a href="#">Progetti</a></li>
+    </ul>
+</div>
+
+<!-- Container -->
+<div class="container text-center" id="pro_inn_container">
+    <hr>
+    <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-3">
+            <img src="images/progetti_1.png">
+        </div>
+        <div class="col-sm-3">
+            <p class="pro_inn_subtitle">Ambiente e Sociale</p>
+            <p class="pro_inn_descrizione">Ci impegnamo ogni giorno per i bisogni
+                delle comunità con soluzioni innovative
+                e altamente tecnologiche.</p>
+            <a href="#">Scopri di più <span class="glyphicon glyphicon-circle-arrow-right"></span></a>
+        </div>
+        <div class="col-sm-3"></div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-3">
+            <img src="images/progetti_2.png">
+        </div>
+        <div class="col-sm-3">
+            <p class="pro_inn_subtitle">Cultura</p>
+            <p class="pro_inn_descrizione">Le nuove tecnologie contribuiscono
+                alla diffusione della cultura nel Paese e
+                alla nascita di nuove professioni.</p>
+            <a href="#">Scopri di più <span class="glyphicon glyphicon-circle-arrow-right"></span></a>
+        </div>
+        <div class="col-sm-3"></div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-3">
+            <img src="images/progetti_3.png">
+        </div>
+        <div class="col-sm-3">
+            <p class="pro_inn_subtitle">Sport</p>
+            <p class="pro_inn_descrizione">Lo sport è passione, rispetto e condivisione
+                di emozioni. Un patrimonio di valori e
+                buone pratiche in cui ci identifichiamo.</p>
+            <a href="#">Scopri di più <span class="glyphicon glyphicon-circle-arrow-right"></span></a>
+        </div>
+        <div class="col-sm-3"></div>
+    </div>
+    <hr>
+    <ul class="pagination">
+        <li class="active"><a href="#">1</a></li>
+        <li class="disabled"><a href="#">2</a></li>
+        <li class="disabled"><a href="#">3</a></li>
+        <li class="disabled"><a href="#">4</a></li>
+    </ul>
+</div>
+
+<!-- Footer -->
+<div id="footer"></div>
+
+</body>
+
+</html>
