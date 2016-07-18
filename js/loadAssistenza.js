@@ -1,7 +1,8 @@
 $(document).ready(function(){
     $("#header").load("TimHeader.html");
     $("#footer").load("TimFooter.html");
-    $("#jumbotron_heading").load("Assistenza_Heading.html"), findMaxCategory()
+    $("#jumbotron_heading").load("Assistenza_Heading.html");
+    findMaxCategory();
 });
 
 function findMaxCategory() {
