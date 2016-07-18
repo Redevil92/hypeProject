@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TIM website</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/mainAle.css">
+    <link rel="stylesheet" type="text/css" href="css/mainDave.css">
+    <link rel="stylesheet" type="text/css" href="css/mainSte.css">
+    <script>
+        $(function(){
+            //load the TimHeader
+            $("#header").load("TimHeader.html");
+
+            //load the TimFooter
+            $("#footer").load("TimFooter.html");
+        });
+    </script>
+</head>
+<body>
+    <div id="header"></div>
+    
+<!-- -- EFFECTIVE BODY -- -->
+
+    <div class = "intestation">
+        <div class = "row">
+            <div class = "col-sm-3">
+                <img src = "images/testimonials.jpg" alt = "devices" class = "intestation_images">
+            </div>
+            <div class = "col-sm-9">
+                <h3 id = "title_intestation">Testimonials</h3>
+                <h4 id = "minimal_description">Scopri perchè alcune persone hanno deciso di sostenerci</h4>
+            </div>
+        </div>
+        <div class = "row source" >
+            <p class = "breadpar">
+                <a href ="TimIndex.html"><bs>Home</bs></a> 
+                > Testimonials
+            </p>
+        </div>
+    </div>
+    
+    <div class="container text-center">
+        <div class="row" style="margin-top: 10px">
+            <div class="col-sm-6">
+                <img src="images/cristoforetti.jpg" alt="samantha cristoforetti" class="img-responsive testimonial-img">
+            </div>
+            <div class="col-sm-6" >
+                <div class="panel panel-primary testimonial_panel">
+                    <div class="panel-heading">
+                        <h3>Samantha Cristoforetti per TIM</h3>
+                    </div>
+                    <div class="panel-body">
+                        <p class="text-justify testimonial-par">La nostra <a href="http://www.meteoweb.eu/2016/05/spazio-samantha-cristoforetti-non-bisogna-perdere-la-capacita-di-meravigliarsi/686825/">astronauta</a> in missione nello spazio ci ricorda come <i>non bisogna mai perdere la capacità di meravigliarsi</i> e di <i>chiedersi sempre come <b>funzionino le cose</b></i><br><br>
+
+                        TIM si impegna da sempre non solo di fornire il <b>servizio di telefonia più esteso d'Italia</b>, ma pone particolare attenzione sulla <b>Qualità</b> di ciò che offre</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="row" style="margin-top: 10px">
+            <div class="col-sm-6">
+                <div class="panel panel-primary testimonial_panel">
+                    <div class="panel-heading">
+                        <h3>Fabiola Gianotti - Presidente CERN</h3>
+                    </div>
+                    <div class="panel-body">
+                        <p class="text-justify testimonial-par"><b><i>La conoscenza è un cammino senza fine</i></b>. Queste le parole della neoeletta presidente del CERN di Ginevra in merito alla costante evoluzione delle tecnologie che ci circondano. <br><br>
+ 
+                        TIM sa che la ricerca è <b>fondamentale</b> nel campo delle telecomunicazioni, per questo ogni anno stanzia fondi nel settore e sceglie le tecnologie più <b>all'avanguardia</b></p>
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <img src="images/cern.jpg" alt="fabiola gianotti" class="img-responsive testimonial-img">
+            </div>
+        </div>
+        <div class="row" style="margin-top: 10px">
+            <div class="col-sm-6">
+                <img src="images/magnini.jpg" alt="filippo magnini" class="img-responsive testimonial-img">
+            </div>
+            <div class="col-sm-6" >
+                <div class="panel panel-primary testimonial_panel">
+                    <div class="panel-heading">
+                        <h3>Filippo Magnini Oro Mondiale</h3>
+                    </div>
+                    <div class="panel-body">
+                        <p class="text-justify testimonial-par">Il motto di Filippo Magnini - <b><i>Ad ogni sfida deve corrispondere sempre una conquista</i></b> - rappresenta il nostro sforzo nella ricerca del <b>meglio</b> al fine di fornire un servizio adeguato e performante alla nostra clientela</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <a href="#" style="float:right">Tutti i testimonials</a>
+    </div>
+    <br><br>
+    <div id="footer"></div>
+</body>
+</html>
