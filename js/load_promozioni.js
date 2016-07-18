@@ -2,11 +2,12 @@ $(document).ready(ready);
 
 function ready(){
 
+    getTimInfo();
     getPromozioneFisso();
     getPromMobile();
     getPromMobileFisso();
     getSmartProm();
-    getTimYoung();
+
 
 
 }
@@ -30,20 +31,7 @@ function getPromozioneFisso() {
                     prom_fisso[j++] = promozioni[i];
             }
 
-            /*console.log(prom_fisso);
-            for(var i = 0; i < prom_fisso.lenght; i++){
-                output += "<div class='row'><div class='col-sm-6'><div class='row'><div class='col-sm-1'></div>";
-                output += "<div class='col-sm-6'><img src="+ prom_fisso[i].Immagine + "></div>" +
-                    "<div class='col-sm-4'><h3 style='color: lightblue'>" + prom_fisso[i].NomePromozione + "</h3><h4>" + prom_fisso[i].Descrizione + "</h4>" +
-                    "<h4 style='color: red'>" + prom_fisso[i].Prezzo + "</h4></div><div class = 'col-sm-1'></div></div></div>";
-                i++;
-                output += "<div class='col-sm-6'><div class='row'><div class='col-sm-1'></div><div class='col-sm-6'><img src="+ prom_fisso[i].Immagine + "></div>" +
-                    "<div class='col-sm-4'><h3 style='color: lightblue'>"+ prom_fisso[i].NomePromozione +"</h3><h4>" + prom_fisso[i].Descrizione + "</h4>" +
-                    "<h4 style='color: red'>" + prom_fisso[i].Prezzo + "</h4></div><div class='col-sm-1'></div></div>";
-               output += "</div></div>";
-                console.log(response);
-            }
-*/
+
 
             for(var i = 0; i < prom_fisso.length; i++){
                 if(i == 0)
@@ -214,7 +202,7 @@ function getSmartProm() {
         method: "POST",
         //dataType: "json", //type of data
         crossDomain: true, //localhost purposes
-        url: "php/get_promozioni.php", //Relative or absolute path to file.php file
+        url: "php/getTimYoung.php", //Relative or absolute path to file.php file
         success: function (response) {
             var promozioni = JSON.parse(response);
             var output = "";
@@ -264,7 +252,7 @@ function getSmartProm() {
 }
 
 
-function getTimYoung() {
+function getTimInfo() {
 
     $.ajax({
         method: "POST",
@@ -274,10 +262,29 @@ function getTimYoung() {
         success: function (response) {
             var promozioni = JSON.parse(response);
             var output = "";
-            
+            console.log(response);
+            var i = 0;
+            output += "<div  style='margin-top: 20px;  margin: 1%;'>" +
+                "<div class='row'>" +
+                "<div class='col-sm-1'></div>" +
+                "<div class='col-sm-5'>" +
+                "<h3 style='color: lightblue; align-content: center'>" + promozioni[i].NomeOfferta + "</h3>" +
+                "<h4>" + promozioni[i].DescrizioneVeloce + "</h4>" +
+                "<h5>" + promozioni[i].Descrizione + "</h5>";
+            output += "</div><div class = 'col-sm-5'>" +
+                "<img src=" + promozioni[i].Immagine + "><button type='button' class='btn btn-danger' style='margin-left: 45%; margin-bottom: 10px' >ATTIVA</button>" +
+                "<h4 style='color: red; margin-left: 45%'>"+ promozioni[i].Prezzo +"</h4> </div><div class='col-sm-1'></div></div>" +
+                "</div>";
 
-            $("#prom_timYoung").html(output);
+            $("#prom_timInfo").html(output);
 
+            output="";
+            output += "<div><h3 style='color: lightblue; margin:5%'>Costi e attivazione</h3>" +
+                "<p style='margin: 5%'>"+ promozioni[i].AttivazioneInfo +"</p><h3 style='color: lightblue;margin: 5%'>Smartphone</h3>" +
+                "<div class='row'><div class='col-sm-1'></div><div class='col-sm-5'> <p style='margin: 5%'>"+ promozioni[i].SmartphoneInfo +"</p>" +
+                "</div><div class='col-sm-5'><img src=" + promozioni[i].ImmagineTel + "> </div><div class='col-sm-1'></div></div> </div>";
+
+            $("#prom_timInfoDescr").html(output);
 
         },
 

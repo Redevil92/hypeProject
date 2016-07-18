@@ -1,0 +1,232 @@
+<head>
+    <title>TIM website</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/mainAle.css">
+    <link rel="stylesheet" type="text/css" href="css/mainDave.css">
+    <link rel="stylesheet" type="text/css" href="css/mainSte.css">
+    <script>
+        $(function(){
+            //load the TimHeader
+            $("#header").load("TimHeader.html");
+
+            //load the TimFooter
+            $("#footer").load("TimFooter.html");
+        });
+    </script>
+</head>
+<body>
+
+<!-- DYNAMIC CONTENT LOADING -->
+
+<div id="header"></div>
+<!-- -- EFFECTIVE BODY -- -->
+
+
+
+
+
+
+
+
+
+
+
+<!--The intestation of the pages -->
+
+<hr class="attivazioneLine">
+<div class="activatingPromTitle">
+    <h3 >Attiva TIM Young sulla tua SIM</h3>
+    <h5 >Dati linea</h5>
+</div>
+
+<div class>
+    <div class="row">
+        <div class="col-sm-1 col-md-1"></div>
+        <div class="col-sm-5 col-md-5" style="margin-top: 5%">
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label for="inputTelefono" class="col-sm-2 control-label">Telefono</label>
+                    <div class="col-sm-10">
+                        <input type="Telefono" class="form-control" id="inputTelefono" placeholder="Telefono">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputRipTelefono" class="col-sm-2 control-label">Ripeti Telefono</label>
+                    <div class="col-sm-10">
+                        <input type="inputRipTelefono" class="form-control" id="inputRipTelefono" placeholder="Ripeti Telefono">
+                    </div>
+                </div>
+                <h5 style="margin-left: 10%">Dichiaro che i dati inseriti sono corretti.</h5>
+                <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-sm-6 col-md-6" style="margin-top: 5%">
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="text-center"  style="border: solid 1px #83a0b0">
+                        <div id ="attivazioneLog">
+                            <p class="attivazioneLog">ATTIVAZIONE RINNOVO  19 EURO</p>
+                            <p class="attivazioneLog">COSTO RINNOVO 9 EURO</p>
+                            <hr class="attivazioneLine">
+                            <p class="attivazioneLog">TOTALE A PAGARE 28 EURO</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="text-center">
+    <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6" style="border: solid 1px dodgerblue">
+            <p>Scegliendo ACCETTO dichiaro di aver letto e di accettare le informazioni
+            Precontrattuali relative all'acquisto di un prodotto prima della conslusione del
+            presente contratto.Dichiaro inoltre di aver letto e di accettare espressamente
+            le Condizioni Generali di vendita del prodotto (riportate nella scheda descrittiva del
+                prodotto e nella Guida all'Acquisto) e l'informativa Privacy.</p>
+            <label class="radio-inline" >
+                <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Acconsento
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" checked> Non acconsento
+            </label>
+        </div>
+        <div class="col-sm-3"></div>
+    </div>
+</div>
+
+
+
+<hr class="attivazioneLine">
+<div class="activatingPromTitle">
+    <h3>Dati di pagamento</h3>
+    <p>Seleziona il metodo di pagamento</p>
+</div>
+
+<div class="text-center" style="margin-top: 5%">
+    <label class="radio-inline" style="margin-right: 5%" >
+        <input type="radio" name="payment" id="inlineRadioA" value="optionA" >
+        <span class="glyphicon glyphicon-eur" style="margin-right: 5px"></span>Credito prepagato
+    </label>
+    <label class="radio-inline" style="margin-right: 5%">
+        <input type="radio" name="payment" id="inlineRadioB" value="optionB" >
+        <span class="glyphicon glyphicon-credit-card"></span> Carta di Credito
+    </label>
+    <label class="radio-inline" style="margin-right: 5%">
+        <input type="radio" name="payment" id="inlineRadioC" value="optionC" >
+        <span class="glyphicon glyphicon-link"></span>Paypal
+    </label>
+    <label class="radio-inline" style="margin-right: 5%">
+        <input type="radio" name="payment" id="inlineRadioD" value="optionD" >
+        <span class="glyphicon glyphicon-saved"></span>Carta di credito memorizzata
+    </label>
+</div>
+
+
+<div style="margin: 5%"><div class="row"><div class="col-sm-3"></div><div class="col-sm-6">
+<div class="panel panel-default credit-card-box">
+    <div class="panel-heading display-table" >
+        <div class="row display-tr" >
+            <h3 class="panel-title display-td" >Dettagli Pagamento</h3>
+            <div class="display-td" >
+                <img class="img-responsive pull-right" src="http://i76.imgup.net/accepted_c22e0.png">
+            </div>
+        </div>
+    </div>
+    <div class="panel-body">
+        <form role="form" id="payment-form">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="form-group">
+                        <label >NUMERO CARTA DI CREDITO</label>
+                        <div class="input-group">
+                            <input
+                                    type="tel"
+                                    class="form-control"
+                                    name="cardNumber"
+                                    placeholder="Numero carta di credito"
+                                    autocomplete="cc-number"
+                                    required autofocus
+                            />
+                            <span class="input-group-addon"><i class="fa fa-credit-card"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-7 col-md-7">
+                    <div class="form-group">
+                        <label><span class="hidden-xs">SCADENZA</span><span class="visible-xs-inline">DATA DI</span> SCADENZA</label>
+                        <input
+                                type="tel"
+                                class="form-control"
+                                name="cardExpiry"
+                                placeholder="MM / AA"
+                                autocomplete="cc-exp"
+                                required
+                        />
+                    </div>
+                </div>
+                <div class="col-xs-5 col-md-5 pull-right">
+                    <div class="form-group">
+                        <label >CODICE CV</label>
+                        <input
+                                type="tel"
+                                class="form-control"
+                                name="cardCVC"
+                                placeholder="codice CV"
+                                autocomplete="cc-csc"
+                                required
+                        />
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="form-group">
+                        <label >TITOLARE CARTA</label>
+                        <input type="text" class="form-control" name="couponCode" />
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 ">
+                    <button class="btn btn-primary btn-lg btn-block "  type="submit">Conferma Acquisto</button>
+                </div>
+            </div>
+            <div class="row" style="display:none;">
+                <div class="col-xs-12">
+                    <p class="payment-errors"></p>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+</div><div class="col-sm-3"></div></div></div>
+
+<hr class="attivazioneLine">
+
+
+<div id="footer"></div>
+
+
+</body>
+</html>

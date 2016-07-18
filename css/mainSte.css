@@ -56,6 +56,12 @@
     color: darkgray;
 }
 
+#glifo{
+    font-size: 50px;
+
+    margin-top: 5%;
+}
+
 button{
     align-items:center;
     margin-top: 30px;
@@ -64,4 +70,22 @@ button{
 .casaEfamiglia{
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+.activatingPromTitle{
+    color: blue;
+    margin-left: 5%;
+}
+
+.attivazioneLog{
+    color: blue;
+    margin-top: 10px;
+}
+
+.attivazioneLine{
+    margin-left: 15%;
+    margin-right: 15%;
+    border: solid 1px;
+    color: lightblue;
+
 }
