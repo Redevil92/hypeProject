@@ -9,8 +9,10 @@ if (mysqli_connect_errno()) { //verify connection
 }
 else
 {
+    $max_cat = $_POST['max_cat'];
+
     # extract results mysqli_result::fetch_array
-    $query = " SELECT * FROM assistenza WHERE MaxiCategoria = 'Controllo costi e pagamenti'";
+    $query = 'SELECT * FROM assistenza WHERE MaxiCategoria ="'.$max_cat.'"';
     //query execution
     $result = $mysqli->query($query);
     //if there are data available

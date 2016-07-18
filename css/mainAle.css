@@ -56,16 +56,6 @@
     color: #ffffff;
 }
 
-.affix {
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-}
-
-.affix + .container {
-    padding-top: 100px;
-}
-
 /* END HEADER */
 
 /* FOOTER */
@@ -141,21 +131,28 @@ footer > p {
     padding-left: 5px;
 }
 
-#breadcrumb {
+#my_breadcrumb {
     background-color: #d9edf7;
+    height: 100%;
+    padding-left: 8px;
 }
 
-#breadcrumb > p {
+#my_breadcrumb > li {
     padding-top: 2px;
     padding-bottom: 2px;
-    padding-left: 8px;
     font-size: 15px;
 }
 
+#my_breadcrumb > li > a:visited {
+    color: #337ab7;
+}
+
+/*
 #current_path {
     color: black;
     text-decoration: none;
 }
+*/
 
 /* END INTESTAZIONE */
 
@@ -176,3 +173,46 @@ footer > p {
 }
 
 /* END HIGHLIGHTS */
+
+/* PROGETTI */
+
+#pro_inn_container > hr {
+    border-width: 3px;
+    border-top-color: #d9edf7;
+}
+
+#pro_inn_container > div.row > div.col-sm-3 > img {
+    height: 200px;
+    width: 240px;
+}
+
+#pro_inn_container > div.row > div.col-sm-6 > p.pro_inn_subtitle,
+#pro_inn_container > div.row > div.col-sm-3 > p.pro_inn_subtitle {
+    font-size: 25px;
+    color: #ed1c24;
+}
+
+#pro_inn_container > div.row > div.col-sm-3 > p.pro_inn_descrizione {
+    font-size: 15px;
+}
+
+#pro_inn_container > div.row > div.col-sm-6 > a:visited,
+#pro_inn_container > div.row > div.col-sm-3 > a:visited {
+    color: #337ab7;
+}
+
+#pro_inn_container > ul.pagination {
+    float: right;
+}
+
+/* END PROGETTI */
+
+/* INNOVAZIONI */
+
+#pro_inn_container > div.row > div.col-sm-6 > img {
+    height: 300px;
+    width: 440px;
+}
+#pro_inn_container > div.row > div.col-sm-6 > p.pro_inn_descrizione {
+    font-size: 17px;
+}

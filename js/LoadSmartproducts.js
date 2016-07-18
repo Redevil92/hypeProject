@@ -11,7 +11,7 @@ function getSmartproducts() {
             for(var i = 0; i < 3; i++) {
                 sent += '<br><div class = "row text-center">';
                 for(var j = i*3; j < 3*(i+1); j++) {
-                    sent += '<div class="col-sm-4"><h2 class="title_brand">'+ smarts[j].Marca + '</h2><p class="title_paragraph">'+ smarts[j].Nome +'</p><div class="col-sm-6"><img src="images/' + smarts[j].img_path + '" class="imglist img-responsive"></div><div class="col-sm-6"><p>' + smarts[j].DescrizioneVeloce +'</p><button class="btn btn-primary">Dettagli</button></div></div>';
+                    sent += '<div class="col-sm-4"><h2 class="title_brand">'+ smarts[j].Marca + '</h2><p class="title_paragraph">'+ smarts[j].Nome +'</p><div class="col-sm-6"><img src="images/' + smarts[j].img_path + '" class="imglist img-responsive"></div><div class="col-sm-6"><p>' + smarts[j].DescrizioneVeloce +'</p><a href = "Tim_Device_Detail.html?id='+smarts[j].ID+'#tv_smartliving"><button class="btn btn-primary myButton">Dettagli</button></a></div></div>';
                 }
             sent += '</div><br>';
             }
