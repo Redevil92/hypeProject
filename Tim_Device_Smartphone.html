@@ -35,14 +35,41 @@
                 <h4 id = "minimal_description">Acquista smartphone, telefoni di casa e cellulari online con TIM</h4>
             </div>
         </div>
-        <div class = "source" >
-            <p class = "breadpar">
-                <a href ="TimIndex.html"><bs>Home</bs></a> 
-                 > 
-                <a href="Tim_Devices.html">Prodotti</a>
-                 > Smartphone &amp; Telefoni
-            <p/>
+        <div class = "row source" >
+            <div class="col-sm-6">
+                <p class = "breadpar">
+                    <a href ="TimIndex.html"><bs>Home</bs></a> 
+                     > 
+                    <a href="Tim_Devices.html">Prodotti</a>
+                     > Smartphone &amp; Telefoni
+                </p>
+            </div>
+            <div class="col-sm-6">
+                <button type="button" data-toggle="collapse" data-target="#filter" class="btn btn-danger aligned">
+                    <span class="glyphicon glyphicon-filter"></span>Filtra
+                </button>
+            </div>
         </div>
+            <div id="filter" class="collapse row">
+                <br>
+                <h4>Prezzo</h4>
+                <form>
+                    <input type="checkbox" name="price1" value="50"> 50
+                    <input type="checkbox" name="price2" value="100"> 100 - 150
+                    <input type="checkbox" name="price3" value="150"> 150 - 200
+                    <input type="checkbox" name="price4" value="200"> > 200
+                </form>
+                <hr>
+                <h4>Marca</h4>
+                <form>
+                    <input type="radio" name="brand" value="apple"> Apple
+                    <input type="radio" name="brand" value="samsung"> Samsung
+                    <input type="radio" name="brand" value="huawei"> Huawei
+                </form>
+                <br>
+            </div>
+            
+        
     </div>
     <div id="content_device_smartphone" class="container-fluid">    
        
