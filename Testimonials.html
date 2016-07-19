@@ -11,38 +11,27 @@
     <link rel="stylesheet" type="text/css" href="css/mainDave.css">
     <link rel="stylesheet" type="text/css" href="css/mainSte.css">
     <script>
-        $(function(){
-            //load the TimHeader
-            $("#header").load("TimHeader.html");
-
-            //load the TimFooter
+        $(document).ready(function(){
+            $("#header").load("TimHeader.html", function () {
+                $("#chi_siamo").addClass("active");
+            });
             $("#footer").load("TimFooter.html");
+            $("#heading").load("TimHeading.html", function () {
+                $("#heading_col_left").html('<img src = "images/testimonials.jpg" alt = "buildings" class = "img-responsive">');
+                $("#p_title").html("Testimonials");
+                $("#p_subtitle").html("Scopri perchè alcune persone hanno deciso di sostenerci");
+                $("#my_breadcrumb").html("<li>Testimonials</li>");
+            });
         });
     </script>
 </head>
 <body>
     <div id="header"></div>
-    
-<!-- -- EFFECTIVE BODY -- -->
 
-    <div class = "intestation">
-        <div class = "row">
-            <div class = "col-sm-3">
-                <img src = "images/testimonials.jpg" alt = "devices" class = "intestation_images">
-            </div>
-            <div class = "col-sm-9">
-                <h3 id = "title_intestation">Testimonials</h3>
-                <h4 id = "minimal_description">Scopri perchè alcune persone hanno deciso di sostenerci</h4>
-            </div>
-        </div>
-        <div class = "row source" >
-            <p class = "breadpar">
-                <a href ="TimIndex.html"><bs>Home</bs></a> 
-                > Testimonials
-            </p>
-        </div>
-    </div>
-    
+    <div id="heading"></div>
+
+    <!-- -- EFFECTIVE BODY -- -->
+
     <div class="container text-center">
         <div class="row" style="margin-top: 10px">
             <div class="col-sm-6">

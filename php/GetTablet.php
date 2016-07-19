@@ -1,6 +1,9 @@
 <?php
 
-$mysqli = new mysqli("localhost", "root", "root", "tim");
+require_once 'db_login.php';
+
+//connection to db
+$mysqli = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
 
 if (mysqli_connect_errno()) { //verify connection
     echo "ERROR: Cannot connect to database ".mysqli_connect_error(); //notify error

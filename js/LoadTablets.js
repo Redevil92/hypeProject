@@ -24,7 +24,14 @@ function getTablets() {
                 sent += '<br><div class = "row text-center">';
                 for(var j = i*3; j < 3*(i+1); j++) {
                     if(tablets[j].inPromozione == 1) {
-                        sent += '<div class="col-sm-4"><h2 class="title_brand">'+ tablets[j].Marca + '</h2><p class="title_paragraph">'+ tablets[j].Nome +'</p><div class="col-sm-6"><img src="images/' + tablets[j].img_path + '" class="imglist img-responsive"></div><div class="col-sm-6"><h3 class="promotion-par">IN PROMOZIONE</h3><p>' + tablets[j].DescrizioneVeloce +'</p><br><a href = "Device_Detail.html?id='+tablets[j].ID+'#tablet"><button class="btn btn-primary myButton">Dettagli</button></a></div></div>';
+                        sent += '<div class="col-sm-4"><h2 class="title_brand">'+ tablets[j].Marca + '</h2><p class="title_paragraph">'+ tablets[j].Nome +'</p><div class="col-sm-6"><img src="images/' + tablets[j].img_path + '" class="imglist img-responsive"></div><div class="col-sm-6"><h3 class="promotion-par">IN PROMOZIONE</h3><p>' + tablets[j].DescrizioneVeloce +'</p><br><a href = "Device_Detail.html?id='+tablets[j].ID+'#tablet">';
+
+                        if(tablets[j].ID == 7) {
+                            sent += '<span class ="glyphicon glyphicon-hand-right" style="font-size:2vw"></span><button class="btn btn-primary myButton">Dettagli</button></a></div></div>';
+                        }
+                        else {
+                            sent += '<button class="btn btn-primary myButton">Dettagli</button></a></div></div>';
+                        }
                     }
                     else {
                         sent += '<div class="col-sm-4"><h2 class="title_brand">'+ tablets[j].Marca + '</h2><p class="title_paragraph">'+ tablets[j].Nome +'</p><div class="col-sm-6"><img src="images/' + tablets[j].img_path + '" class="imglist img-responsive"></div><div class="col-sm-6"><p>' + tablets[j].DescrizioneVeloce +'</p><br><a href = "Device_Detail.html?id='+tablets[j].ID+'#tablet"><button class="btn btn-primary myButton">Dettagli</button></a></div></div>';

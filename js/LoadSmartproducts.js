@@ -20,10 +20,17 @@ function getSmartproducts() {
         success: function(response) {
             var smarts = JSON.parse(response);
             var sent = '';
-            for(var i = 0; i < 3; i++) {
+            for(var i = 0; i < smarts.length/3; i++) {
                 sent += '<br><div class = "row text-center">';
                 for(var j = i*3; j < 3*(i+1); j++) {
-                    sent += '<div class="col-sm-4"><h2 class="title_brand">'+ smarts[j].Marca + '</h2><p class="title_paragraph">'+ smarts[j].Nome +'</p><div class="col-sm-6"><img src="images/' + smarts[j].img_path + '" class="imglist img-responsive"></div><div class="col-sm-6"><p>' + smarts[j].DescrizioneVeloce +'</p><a href = "Device_Detail.html?id='+smarts[j].ID+'#tv_smartliving"><button class="btn btn-primary myButton">Dettagli</button></a></div></div>';
+                    sent += '<div class="col-sm-4"><h2 class="title_brand">'+ smarts[j].Marca + '</h2><p class="title_paragraph">'+ smarts[j].Nome +'</p><div class="col-sm-6"><img src="images/' + smarts[j].img_path + '" class="imglist img-responsive"></div><div class="col-sm-6"><p>' + smarts[j].DescrizioneVeloce +'</p><a href = "Device_Detail.html?id='+smarts[j].ID+'#tv_smartliving">';
+
+                    if(smarts[j].ID == 2) {
+                        sent += '<span class ="glyphicon glyphicon-hand-right" style="font-size:2vw"></span><button class="btn btn-primary myButton">Dettagli</button></a></div></div>';
+                    }
+                    else {
+                        sent += '<button class="btn btn-primary myButton">Dettagli</button></a></div></div>';
+                    }
                 }
                 sent += '</div><br>';
             }

@@ -24,10 +24,23 @@ function getSmartphones() {
                 sent += '<br><div class = "row text-center">';
                 for(var j = i*3; j < 3*(i+1); j++) {
                     if(smartphones[j].inPromozione == 1) {
-                        sent += '<div class="col-sm-4"><h2 class="title_brand">'+ smartphones[j].Marca + '</h2><p class="title_paragraph">'+ smartphones[j].Nome +'</p><div class="col-sm-6"><img src="images/'+smartphones[j].img_path+'" class="imglist img-responsive"></div><div class="col-sm-6"><h3 class="promotion-par">IN PROMOZIONE</h3><p>' + smartphones[j].DescrizioneVeloce +'</p><a href = "Device_Detail.html?id='+smartphones[j].ID+'#smartphone"><button class="btn btn-primary myButton">Dettagli</button></a></div></div>';
+                        sent += '<div class="col-sm-4"><h2 class="title_brand">'+ smartphones[j].Marca + '</h2><p class="title_paragraph">'+ smartphones[j].Nome +'</p><div class="col-sm-6"><img src="images/'+smartphones[j].img_path+'" class="imglist img-responsive"></div><div class="col-sm-6"><h3 class="promotion-par">IN PROMOZIONE</h3><p>' + smartphones[j].DescrizioneVeloce +'</p><a href = "Device_Detail.html?id='+smartphones[j].ID+'#smartphone">';
+                        if(smartphones[j].ID == 4) {
+                            sent += '<span class ="glyphicon glyphicon-hand-right" style="font-size:2vw"></span><button class="btn btn-primary myButton">Dettagli</button></a></div></div>';
+                        }
+                        else {
+                            sent += '<button class="btn btn-primary myButton">Dettagli</button></a></div></div>';
+                        }
                     }
                     else {
-                        sent += '<div class="col-sm-4"><h2 class="title_brand">'+ smartphones[j].Marca + '</h2><p class="title_paragraph">'+ smartphones[j].Nome +'</p><div class="col-sm-6"><img src="images/'+smartphones[j].img_path+'" class="imglist img-responsive"></div><div class="col-sm-6"><p>' + smartphones[j].DescrizioneVeloce +'</p><a href = "Device_Detail.html?id='+smartphones[j].ID+'#smartphone"><button class="btn btn-primary myButton">Dettagli</button></a></div></div>';
+                        sent += '<div class="col-sm-4"><h2 class="title_brand">'+ smartphones[j].Marca + '</h2><p class="title_paragraph">'+ smartphones[j].Nome +'</p><div class="col-sm-6"><img src="images/'+smartphones[j].img_path+'" class="imglist img-responsive"></div><div class="col-sm-6"><p>' + smartphones[j].DescrizioneVeloce +'</p><a href = "Device_Detail.html?id='+smartphones[j].ID+'#smartphone">';
+
+                        if(smartphones[j].ID == 4) {
+                            sent += '<span class ="glyphicon glyphicon-hand-right"></span><button class="btn btn-primary myButton">NO</button></a></div></div>';
+                        }
+                        else {
+                            sent += '<button class="btn btn-primary myButton">Dettagli</button></a></div></div>';
+                        }
                     }
                 }
                 sent += '</div><br>';
