@@ -39,7 +39,7 @@ function getTimInfo(id) {
                 "<h4>" + promozioni[i].DescrizioneVeloce + "</h4>" +
                 "<h5>" + promozioni[i].Descrizione + "</h5>";
             output += "</div><div class = 'col-sm-5'>" +
-                "<img src=" + promozioni[i].Immagine + "><a href='Promozioni_mobile_young_form.html'><button type='button' class='btn btn-danger' style='margin-left: 45%; margin-bottom: 10px' >ATTIVA</button></a>" +
+                "<img style='width: 45vw; height: 30vw' src=" + promozioni[i].Immagine + "><a href='Promozioni_mobile_young_form.html'><button type='button' class='btn btn-danger' style='margin-left: 45%; margin-top: 5%' >ATTIVA</button></a>" +
                 "<h4 style='color: red; margin-left: 45%'>" + promozioni[i].Prezzo + "</h4> </div><div class='col-sm-1'></div></div>" +
                 "</div>";
 
@@ -49,7 +49,7 @@ function getTimInfo(id) {
             output += "<div><h3 style='color: lightblue; margin:5%'>Costi e attivazione</h3>" +
                 "<p style='margin: 5%'>" + promozioni[i].AttivazioneInfo + "</p><h3 style='color: lightblue;margin: 5%'>Smartphone</h3>" +
                 "<div class='row'><div class='col-sm-1'></div><div class='col-sm-5'> <p style='margin: 5%'>" + promozioni[i].SmartphoneInfo + "</p>" +
-                "</div><div class='col-sm-5'><img src=" + promozioni[i].ImmagineTel + "> </div><div class='col-sm-1'></div></div> </div>";
+                "</div><div class='col-sm-5'><img style='width: 45vw; height: 30vw' src=" + promozioni[i].ImmagineTel + "> </div><div class='col-sm-1'></div></div> </div>";
 
 
 
