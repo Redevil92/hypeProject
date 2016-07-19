@@ -9,12 +9,29 @@ $(document).ready(function () {
 
 
 function ready(){
-    
-    getTimInfo();
-    getPromozioneFisso();
-    getPromMobile();
-    getPromMobileFisso();
-    getSmartProm();
+
+    var url = window.location.pathname;
+    console.log(url);
+    switch(url){
+        case '/hypeProject/Promozioni_fisso.html':
+            getPromozioneFisso();
+            break;
+        case '/hypeProject/Promozioni_mobile.html':
+            getPromMobile();
+            break;
+        case '/hypeProject/Promozioni_fisso&mobile.html':
+            getPromMobileFisso();
+            break;
+        case '/hypeProject/Promozione_smartLife.html':
+            break;
+        case '/hypeProject/Promozione_smartLife.html':
+            getSmartProm();
+            break;
+        default:
+            break;
+    }
+
+
 
 
 
