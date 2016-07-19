@@ -52,7 +52,7 @@ function getSmartphones() {
             var heading_img = '<img src = "images/TIM_Girl_with_smartphone.jpg" alt = "devices" class = "img-responsive">';
             var p_title = 'Smartphone &amp; Telefoni';
             var p_subtitle = 'Acquista smartphone, telefoni di casa e cellulari online con TIM';
-            var breadcrumb = '<li><a href="TimIndex.html">Home</a></li><li><a href="Devices.html">Devices</a></li><li>Smartphone &amp; telefoni</li>';
+            var breadcrumb = '<li><a href="Devices.html">Devices</a></li><li>Smartphone &amp; telefoni</li>';
             
             //loading heading
             $("#heading").load("TimHeading.html", function(){

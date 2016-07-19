@@ -32,7 +32,7 @@ function getDescrizione(){
             var output = "";
 
             output += "<div style='margin-left: 20%; margin-right: 20%'><h3 style='color: lightblue; font-size: 35px; margin-left: 20%; margin-right: 20%'>"+smartLife[0].TitoloArg +"</h3>"
-            output += "<p style='font-size: 30px'>"+smartLife[0].Descrizione+"</p></div>"
+            output += "<p class='text-justify' style='font-size: 30px'>"+smartLife[0].Descrizione+"</p></div>"
 
             $("#serviziPersona_descr").html(output);
 

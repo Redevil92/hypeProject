@@ -41,7 +41,7 @@ function getSmartproducts() {
             var heading_img = ' <img src = "images/TIM_children_tv.jpg" alt = "devices" class = "img-responsive">';
             var p_title = 'TV &amp; Smartliving';
             var p_subtitle = 'Acquista televisori, video e audio con TIM';
-            var breadcrumb = '<li><a href="TimIndex.html">Home</a></li><li><a href="Devices.html">Devices</a></li><li>TV &amp; Smartliving</li>';
+            var breadcrumb = '<li><a href="Devices.html">Devices</a></li><li>TV &amp; Smartliving</li>';
             
             //loading heading
             $("#heading").load("TimHeading.html", function(){

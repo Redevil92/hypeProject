@@ -45,7 +45,7 @@ function getTablets() {
             var heading_img = '<img src = "images/Tim_tablet.jpg" alt = "devices" class = "img-responsive">';
             var p_title = 'Tablet';
             var p_subtitle = 'Acquista tablet e PC con Telecom e TIM';
-            var breadcrumb = '<li><a href="TimIndex.html">Home</a></li><li><a href="Devices.html">Devices</a></li><li>Tablet</li>';
+            var breadcrumb = '<li><a href="Devices.html">Devices</a></li><li>Tablet</li>';
             
             //loading heading
             $("#heading").load("TimHeading.html", function(){

@@ -40,7 +40,7 @@ function getNetworking() {
             var heading_img = '<img src = "images/Tim_girl_networking.jpg" alt = "devices" class = "img-responsive">';
             var p_title = 'Modem &amp; Networking';
             var p_subtitle = 'Naviga in mobilità o da casa con i dispositivi per il networking di TIM';
-            var breadcrumb = '<li><a href="TimIndex.html">Home</a></li><li><a href="Devices.html">Devices</a></li><li>Modem &amp; Networking</li>';
+            var breadcrumb = '<li><a href="Devices.html">Devices</a></li><li>Modem &amp; Networking</li>';
             
             //loading heading
             $("#heading").load("TimHeading.html", function(){
