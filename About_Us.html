@@ -10,39 +10,25 @@
     <link rel="stylesheet" type="text/css" href="css/mainAle.css">
     <link rel="stylesheet" type="text/css" href="css/mainDave.css">
     <link rel="stylesheet" type="text/css" href="css/mainSte.css">
-    <script>
-        $(function(){
-            //load the TimHeader
+     <script>
+        $(document).ready(function(){
             $("#header").load("TimHeader.html");
-
-            //load the TimFooter
             $("#footer").load("TimFooter.html");
+            $("#heading").load("TimHeading.html", function () {
+                $("#heading_col_left").html('<img src = "images/Edifici_TIM.jpg" alt = "buildings" class = "img-responsive">');
+                $("#p_title").html("About Us");
+                $("#p_subtitle").html("Customers, investments and service distribution");
+                $("#my_breadcrumb").html("<li><a href='TimIndex.html'>Home</a></li><li>About Us</li>");
+            });
         });
     </script>
 </head>
 <body>
     <div id="header"></div>
     
+    <div id="heading"></div>
 <!-- -- EFFECTIVE BODY -- -->
 
-    <div class = "intestation"
-        <div class = "row">
-            <div class = "col-sm-3">
-                <img src = "images/Edifici_TIM.jpg" alt = "buildings" class = "intestation_images">
-            </div>
-            <div class = "col-sm-9">
-                <h3 id = "title_intestation">About Us</h3>
-                <h4 id = "minimal_description">Customers, investments and service distribution</h4>
-            </div>
-        </div>
-        <div class = "row source" >
-            <p class = "breadpar">
-                <a href ="TimIndex.html"><bs>Home</bs></a> 
-                > About us
-            </p>
-        </div>
-    </div>
-    <br>
     <div class="container squared text-center">
         <div class="col-sm-4">
             <img src="images/italia.jpg" alt="italia" class="img-responsive big-img">

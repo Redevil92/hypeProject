@@ -182,6 +182,8 @@
 #pro_inn_container > div.row > div.col-sm-6 > img {
     height: 25vw;
     width: 40vw;
+    display: block;
+    margin: auto;
 }
 
 #pro_inn_container > div.row > div.col-sm-6 > p.pro_inn_subtitle{
@@ -227,4 +229,21 @@
     background-color: aliceblue;
     font-size: 1.25vw;
     font-weight: 500;
+}
+
+#page_intro > div.row > div.col-sm-6 {
+    width: 37%;
+}
+
+#page_intro > div.row > div.col-sm-6 > img {
+    width: 7vw;
+    height: 7vw;
+    display: block;
+    margin: auto;
+    float: right;
+}
+
+#page_intro > div.row > div.col-sm-6 > p {
+    float: left;
+    font-size: 1.1vw;
 }

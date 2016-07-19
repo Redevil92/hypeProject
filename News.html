@@ -11,38 +11,24 @@
     <link rel="stylesheet" type="text/css" href="css/mainDave.css">
     <link rel="stylesheet" type="text/css" href="css/mainSte.css">
     <script>
-        $(function(){
-            //load the TimHeader
+        $(document).ready(function(){
             $("#header").load("TimHeader.html");
-
-            //load the TimFooter
             $("#footer").load("TimFooter.html");
+            $("#heading").load("TimHeading.html", function () {
+                $("#heading_col_left").html('<img src = "images/news.jpg" alt = "devices" class ="img-responsive">');
+                $("#p_title").html("News");
+                $("#p_subtitle").html("La nostra storia, il nostro futuro");
+                $("#my_breadcrumb").html("<li><a href='TimIndex.html'>Home</a></li><li>News</li>");
+            });
         });
     </script>
 </head>
 <body>
     <div id="header"></div>
     
+    <div id="heading"></div>
 <!-- -- EFFECTIVE BODY -- -->
 
-    <div class = "intestation">
-        <div class = "row">
-            <div class = "col-sm-3">
-                <img src = "images/news.jpg" alt = "devices" class = "intestation_images">
-            </div>
-            <div class = "col-sm-9">
-                <h3 id = "title_intestation">News</h3>
-                <h4 id = "minimal_description">La nostra storia, il nostro futuro</h4>
-            </div>
-        </div>
-        <div class = "row source" >
-            <p class = "breadpar">
-               <a href ="TimIndex.html"><bs>Home</bs></a> 
-               > News
-            </p>
-        </div>
-    </div>
-    
     <div class="container">
         <div class="row">
             <div class="col-sm-3 filled squared news">
