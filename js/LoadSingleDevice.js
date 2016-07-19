@@ -59,6 +59,9 @@ function getSingleDevice(value) {
                 else {
                     rightDesc = '<div class="col-sm-6"><h1>Descrizione</h1><p>'+device[0].DescrizioneVeloce+'</p><div class="well text-center"><h3><b>Acquistalo a prezzo pieno</b></h3><h1 class="price">'+device[0].Prezzo+'€</h1><button type="button" class="btn btn-primary"><h4><b>Aggiungi al carrello</b></h4></button></div><div class="well text-center"><h4>Scegli una delle offerte TIM e ricevi questo device a soli</h4><h1 class="price">'+device[0].PrezzoAbbonamento+'€/mese</h1><button type="button" class="btn btn-primary"><h4><b>Abbina alla&#769;offerta</b></h4></button></div></div>';
                 }
+                if(device[0].inOmaggio == 1) {
+                    rightDesc = '<div class="col-sm-6"><h1>Descrizione</h1><p>'+device[0].DescrizioneVeloce+'</p><div class="well text-center"><h3><b>Acquistalo a prezzo pieno</b></h3><h1 class="price">'+device[0].Prezzo+'€</h1><button type="button" class="btn btn-primary"><h4><b>Aggiungi al carrello</b></h4></button></div><div class="well text-center"><h4>Scegli un nostro piano tariffario <b>fisso</b> o <b>fisso + mobile</b>. Riceverai questo modem IN OMAGGIO</h4><a href="SmartLife_TVeEnt.html"><button type="button" class="btn btn-primary"><h4><b>Scopri le offerte</b></h4></button></a></div></div>';
+                }
             }
 
             var technical ='';
@@ -66,6 +69,26 @@ function getSingleDevice(value) {
             technical = '<div class="row"><ul class="nav nav-tabs bottomtabs"><li class="active"><a data-toggle="tab" href="#home">Scheda Tecnica</a></li><li><a data-toggle="tab" href="#menu1">Consegna</a></li><li><a data-toggle="tab" href="#menu2">Recesso e garanzia</a></li></ul><div class="tab-content"><div id="home" class="tab-pane fade in active"><pre style="margin-left:10px">'+device[0].Descrizione+'</pre></div><div id="menu1" class="tab-pane fade"><pre style="margin-left:10px">I prodotti richiesti sono consegnati esclusivamente via corriere espresso, è prevista sempre la consegna fronte strada.<br><br>TIM si impegna a rispettare come tempo massimo di consegna un periodo non superiore a 10 giorni lavorativi, salvo casi di forza maggiore che possano per esempio ascriversi alla richiesta, da parte dello stesso Cliente tramite contatto telefonico, di slittamento della consegna secondo un determinato appuntamento.</pre></div><div id="menu2" class="tab-pane fade"><pre style="margin-left:10px">Le vendite di prodotti via Internet sono disciplinate dal D.Lgs n. 206/05 che regola la materia dei contratti a distanza, cioè effettuati al di fuori dei locali commerciali. Tale normativa sancisce il diritto di recesso, ovvero la possibilità per il consumatore di restituire il prodotto acquistato e di ottenere il rimborso della spesa sostenuta.<br><br>Questo diritto è riservato esclusivamente alle persone fisiche (consumatori), quindi non può essere esercitato dalle persone giuridiche e dalle persone fisiche che agiscono per scopi riferibili alla&#769;attività imprenditoriale, commerciale, artigianale o professionale eventualmente svolta.<br><br>Per esercitare il diritto di recesso è necessario inviare, entro 14 giorni dal ricevimento della merce, una comunicazione nella quale viene chiaramente manifestata la volontà di recedere dal contratto.</pre></div></div></div>';
             
             var topString = carousel + rightDesc +'</div><hr>';
+            
+            var categoryURL = '';
+            switch (table) {
+                case 'smartphone':
+                    categoryURL = 'Device_Smartphone.html';
+                    break;
+                case 'tablet':
+                    categoryURL = 'Device_Tablet.html'
+                    break;
+                case 'modem_networking':
+                    categoryURL = 'Device_Modem_Networking.html'
+                    break;
+                case 'tv_smartliving':
+                    categoryURL = 'Device_Smartlife.html'
+                    break;
+            }
+            
+            var breadcrumb = '<li><a href="Devices.html">Devices</a></li><li><a href = "'+categoryURL+'">'+table+'</a></li><li>'+device[0].Marca+' '+device[0].Nome +'</li>';
+            
+            $('#my_breadcrumb').html(breadcrumb);
             
             $("#product_overview").html(topString);
             
