@@ -23,8 +23,6 @@ function ready(){
             getPromMobileFisso();
             break;
         case '/hypeProject/Promozione_smartLife.html':
-            break;
-        case '/hypeProject/Promozione_smartLife.html':
             getSmartProm();
             break;
         default:
@@ -139,9 +137,10 @@ function getPromMobile() {
                 $("#p_title").html("Offerte Mobile");
                 $("#p_subtitle").html("Le migliori offerte per la tua linea mobile");
                 $("#my_breadcrumb").html("<li><a href='TimIndex.html'>Home</a></li><li><a href='#'>Promozioni</a></li><li><a href='#'>Mobile</a></li>");
-                $("#prom_mobile").html(output);
+
             });
 
+            $("#prom_mobile").html(output);
 
             var outputEstero = "";
 
