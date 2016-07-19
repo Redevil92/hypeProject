@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script>
-        $(document).ready(function(){
-            $(".imgpar").fadeIn(1000)
-            $("#toplogo").hover(function() {
-                $(this).addClass("toplogo-hover");     
-            }, function() {
-                $(this).removeClass("toplogo-hover");
-            })
-        });
-    </script>
+   <script>
+       $(document).ready(function(){
+           $(".imgpar").fadeIn(1000)
+           $("#toplogo").hover(function() {
+               $(this).addClass("toplogo-hover");     
+           }, function() {
+               $(this).removeClass("toplogo-hover");
+           })
+       });
+   </script>
 </head>
 <div class="container-fluid">    
     <div class="row text-center">
@@ -30,7 +30,7 @@
                 <div class="panel-body half-dimensioned">
                     <h1 class="imgpar">Prodotti TIM</h1>
                     <h3 class="imgpar">I migliori smartphone e tablet in commercio</h3>
-                    <button class="btn btn-primary btn-lg half-dimensioned" style="margin-top: 15px">Scopri</button>
+                    <a href="Devices.html"><button class="btn btn-primary btn-lg half-dimensioned" style="margin-top: 15px">Scopri</button></a>
                 </div>
             </div>
         </div>
@@ -39,7 +39,7 @@
                 <div class="panel-body half-dimensioned right-aligned">
                     <h1 class="imgpar">TIM 4G </h1>
                     <h3 class="imgpar">La migliore rete 4G d'Italia</h3>
-                    <button class="btn btn-primary btn-lg half-dimensioned" style="margin-top: 15px">Scopri</button>
+                    <a href="Promozioni_mobile.html"><button class="btn btn-primary btn-lg half-dimensioned" style="margin-top: 15px">Scopri</button></a>
                 </div>
             </div>
         </div>
@@ -50,7 +50,7 @@
                 <div class="panel-body">
                     <h1 class="imgpar bright">Smart Living</h1>
                     <h3 class="imgpar bright">La tecnologia applicata al benessere</h3>
-                    <button class="btn btn-primary btn-lg half-dimensioned" style="margin-top: 15px">Scopri</button>
+                    <a href="Device_Smartlife.html"><button class="btn btn-primary btn-lg half-dimensioned" style="margin-top: 15px">Scopri</button></a>
                 </div>
             </div>
         </div>
@@ -59,33 +59,26 @@
                 <div class="panel-body">
                     <h1 class="imgpar bright" >TIM Fibra</h1>
                     <h3 class="imgpar bright">La fibra ottica più veloce d'Italia</h3>
-                    <button class="btn btn-primary btn-lg" style="margin-top: 15px">Scopri come averla</button>
+                    <a href="Promozioni_fisso.html"><button class="btn btn-primary btn-lg" style="margin-top: 15px">Scopri come averla</button></a>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<div class="container-fluid">
+<div class="container">
     <div class="row text-center" style="padding-top: 50px">
-        <div class="col-sm-4">
+        <div class="col-sm-6">
             <div class="panel panel-primary">
-                <div class="panel-heading"><h1>Entra in TIM</h1></div>
-                <div class="panel-body"><img src="images/TIM_handshake.jpg" class="img-responsive" style="width:100%" alt="Handshake"></div>
-                <div class="panel-footer"><button type ="button" class="btn-danger half-dimensioned"><h3>SCOPRI DI PIU'</h3></button></div>
+                <div class="panel-heading"><h3>Entra in TIM</h3></div>
+                <img src="images/TIM_handshake.jpg" class="img-responsive bottom-img-home" alt="Handshake">
+                <div class="panel-footer"><a href="About_Us.html"><button type ="button" class="btn btn-danger btn-home-bottom half-dimensioned">SCOPRI DI PIU'</button></a></div>
             </div> 
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-6">
             <div class="panel panel-primary">
-                <div class="panel-heading">BLACK FRIDAY DEAL</div>
-                <div class="panel-body"><img src="http://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
-                <div class="panel-footer"><button type ="button" class="btn-danger">Buy 50 mobiles and get a gift card</button></div>
-            </div>
-        </div>
-        <div class="col-sm-4">
-            <div class="panel panel-primary">
-                <div class="panel-heading">BLACK FRIDAY DEAL</div>
-                <div class="panel-body"><img src="http://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
-                <div class="panel-footer"><button type ="button" class="btn-danger">Buy 50 mobiles and get a gift card</button></div>
+                <div class="panel-heading"><h3>Seguici su</h3></div>
+                <a href="#"><button type="button" class="btn social"><img src="images/facebook-share-buttons.png" class="social-img"></button></a>
+                <a href="#"><button type="button" class="btn social "><img src="images/twitter.png" class="social-img"></button></a>
             </div>
         </div>
     </div>
