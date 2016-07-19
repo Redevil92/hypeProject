@@ -123,11 +123,11 @@
 
 <div class="text-center" style="margin-top: 5%">
     <label class="radio-inline" style="margin-right: 5%" >
-        <input type="radio" name="payment" id="inlineRadioA" value="optionA" >
+        <input type="radio" name="payment" id="inlineRadioA" value="optionA"  >
         <span class="glyphicon glyphicon-eur" style="margin-right: 5px"></span>Credito prepagato
     </label>
     <label class="radio-inline" style="margin-right: 5%">
-        <input type="radio" name="payment" id="inlineRadioB" value="optionB" >
+        <input type="radio" name="payment" id="inlineRadioB" value="optionB" checked >
         <span class="glyphicon glyphicon-credit-card"></span> Carta di Credito
     </label>
     <label class="radio-inline" style="margin-right: 5%">
@@ -141,7 +141,7 @@
 </div>
 
 
-<div style="margin: 5%"><div class="row"><div class="col-sm-3"></div><div class="col-sm-6">
+<div style="margin: 5%" id="formCard"><div class="row"><div class="col-sm-3"></div><div class="col-sm-6">
 <div class="panel panel-default credit-card-box">
     <div class="panel-heading display-table" >
         <div class="row display-tr" >
@@ -221,6 +221,31 @@
     </div>
 </div>
 </div><div class="col-sm-3"></div></div></div>
+
+
+
+
+<script
+src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#inlineRadioA").click(function(){
+        $("#formCard").hide();
+    });
+    $("#inlineRadioB").click(function(){
+        $("#formCard").show();
+    });
+
+    $("#inlineRadioC").click(function(){
+        $("#formCard").hide();
+    });
+    $("#inlineRadioD").click(function(){
+        $("#formCard").hide();
+    });
+});
+</script>
+
+
 
 <hr class="attivazioneLine">
 
