@@ -76,6 +76,12 @@ function getPromozioneFisso() {
                     "<h4 style='color: red'>" + prom_fisso[i].Prezzo + "</h4><button type='button' class='btn btn-primary'>SCOPRI</button></div></div></div></div>"
             }
 
+            $("#heading").load("TimHeading.html", function () {
+                $("#heading_col_left").html("<img class='img-responsive' src='images/innovazioni_intro.png'>");
+                $("#p_title").html("Offerte Fisso");
+                $("#p_subtitle").html("Le migliori offerte per la tua linea fissa.");
+                $("#my_breadcrumb").html("<li><a href='TimIndex.html'>Home</a></li><li><a href='#'>Promozioni</a></li><li>Fisso</li>");
+            });
 
             $("#promozione_fisso").html(output);
 
@@ -117,7 +123,7 @@ function getPromMobile() {
 
             for (; i < prom_mobile.length - 4; i++) {
                 if(i == 0)
-                    output += "<h2 style='color: lightblue; margin: 5%'>VOCE E INTERNET</h2>>"
+                    output += "<h2 style='color: lightblue; margin: 5%'>VOCE E INTERNET</h2>";
                 output += "<div  style='margin-top: 20px;  margin: 1%;'>" +
                     "<div class='row'>" +
                     "<div class='col-sm-1'></div>" +
@@ -125,10 +131,19 @@ function getPromMobile() {
                     "<h3 style='color: lightblue; align-content: center'>" + prom_mobile[i].NomePromozione + "</h3>" +
                     "<h4>" + prom_mobile[i].Descrizione + "</h4>" +
                     "<h4 style='color: red'>" + prom_mobile[i].Prezzo + "</h4>";
-                output += "</div><div class = 'col-sm-5'>" +
-                    "<img src=" + prom_mobile[i].Immagine + "></div><div class='col-sm-1'></div></div>" +
-                    "<button type='button' class='btn btn-primary' style='margin-left: 45%; margin-bottom: 10px' >SCOPRI L'OFFERTA</button>" +
-                    "</div>";
+
+                if(prom_mobile[i].id==13){
+                    output += "</div><div class = 'col-sm-5'>" +
+                        "<img src=" + prom_mobile[i].Immagine + "></div><div class='col-sm-1'></div></div>" +
+                        "<a href='Promozioni_mobile_young.html?" + prom_mobile[i].id + "'><button type='button' class='btn btn-primary' style='margin-left: 45%; margin-bottom: 10px' >SCOPRI L'OFFERTA</button></a>" +
+                        "</div>";
+                }
+                else{
+                    output += "</div><div class = 'col-sm-5'>" +
+                        "<img src=" + prom_mobile[i].Immagine + "></div><div class='col-sm-1'></div></div>" +
+                        "<button type='button' class='btn btn-primary' style='margin-left: 45%; margin-bottom: 10px' >SCOPRI L'OFFERTA</button>" +
+                        "</div>";
+                }
 
             }
 
@@ -137,7 +152,6 @@ function getPromMobile() {
                 $("#p_title").html("Offerte Mobile");
                 $("#p_subtitle").html("Le migliori offerte per la tua linea mobile");
                 $("#my_breadcrumb").html("<li><a href='TimIndex.html'>Home</a></li><li><a href='#'>Promozioni</a></li><li><a href='#'>Mobile</a></li>");
-
             });
 
             $("#prom_mobile").html(output);
@@ -214,12 +228,14 @@ function getPromMobileFisso() {
 
             }
 
-            $("#heading_col_left").html("<img class='img-responsive' src='images/innovazioni_intro.png'>");
-            $("#p_title").html("Offerte Mobile più fisso");
-            $("#p_subtitle").html("Tutto insieme con la semplicità e convenienza di un unico conto.");
-            $("#my_breadcrumb").html("<li><a href='TimIndex.html'>Home</a></li><li><a href='#'>Promozioni</a></li><li><a href='#'>Mobile più fisso</a></li>");
-            $("#prom_mobile").html(output);
+            $("#heading").load("TimHeading.html", function () {
+                $("#heading_col_left").html("<img class='img-responsive' src='images/innovazioni_intro.png'>");
+                $("#p_title").html("Offerte Mobile più fisso");
+                $("#p_subtitle").html("Tutto insieme con la semplicità e convenienza di un unico conto.");
+                $("#my_breadcrumb").html("<li><a href='TimIndex.html'>Home</a></li><li><a href='#'>Promozioni</a></li><li><a href='#'>Mobile più fisso</a></li>");
+            }
 
+            //$("#prom_mobile").html(output);
             $("#prom_fisso_mobile").html(output);
 
 
@@ -280,66 +296,11 @@ function getSmartProm() {
                 $("#p_title").html("Offerte Smart Life");
                 $("#p_subtitle").html("Il futuro è smart, scopri tutte le promozioni riguardanti il mondo connesso a TIM.");
                 $("#my_breadcrumb").html("<li><a href='TimIndex.html'>Home</a></li><li><a href='#'>Promozioni</a></li><li><a href='#'>Smart Life</a></li>");
-                $("#prom_mobile").html(output);
             });
 
-
+            //$("#prom_mobile").html(output);
             $("#prom_smart").html(output);
 
-
-        },
-
-        error: function (request, error) {
-            console.log("Error");
-        }
-
-    });
-}
-
-
-function getTimInfo() {
-
-    $.ajax({
-        method: "POST",
-        //dataType: "json", //type of data
-        crossDomain: true, //localhost purposes
-        url: "php/getTimYoung.php", //Relative or absolute path to file.php file
-        success: function (response) {
-            var promozioni = JSON.parse(response);
-            var output = "";
-            console.log(response);
-            var i = 0;
-            output += "<div  style='margin-top: 20px;  margin: 1%;'>" +
-                "<div class='row'>" +
-                "<div class='col-sm-1'></div>" +
-                "<div class='col-sm-5'>" +
-                "<h3 style='color: lightblue; align-content: center'>" + promozioni[i].NomeOfferta + "</h3>" +
-                "<h4>" + promozioni[i].DescrizioneVeloce + "</h4>" +
-                "<h5>" + promozioni[i].Descrizione + "</h5>";
-            output += "</div><div class = 'col-sm-5'>" +
-                "<img src=" + promozioni[i].Immagine + "><button type='button' class='btn btn-danger' style='margin-left: 45%; margin-bottom: 10px' >ATTIVA</button>" +
-                "<h4 style='color: red; margin-left: 45%'>"+ promozioni[i].Prezzo +"</h4> </div><div class='col-sm-1'></div></div>" +
-                "</div>";
-
-            $("#prom_timInfo").html(output);
-
-            output="";
-            output += "<div><h3 style='color: lightblue; margin:5%'>Costi e attivazione</h3>" +
-                "<p style='margin: 5%'>"+ promozioni[i].AttivazioneInfo +"</p><h3 style='color: lightblue;margin: 5%'>Smartphone</h3>" +
-                "<div class='row'><div class='col-sm-1'></div><div class='col-sm-5'> <p style='margin: 5%'>"+ promozioni[i].SmartphoneInfo +"</p>" +
-                "</div><div class='col-sm-5'><img src=" + promozioni[i].ImmagineTel + "> </div><div class='col-sm-1'></div></div> </div>";
-
-
-            $("#heading").load("TimHeading.html", function () {
-                $("#heading_col_left").html("<img class='img-responsive' src='images/innovazioni_intro.png'>");
-                $("#p_title").html("Offerte Smart Life");
-                $("#p_subtitle").html("Le migliori offerte per la tua linea mobile.");
-                $("#my_breadcrumb").html("<li><a href='TimIndex.html'>Home</a></li><li><a href='#'>Promozioni</a></li><li><a href='#'>Mobile</a></li><li><a href='#'>TIM Young</a></li>");
-                $("#prom_mobile").html(output);
-            });
-
-
-            $("#prom_timInfoDescr").html(output);
 
         },
 

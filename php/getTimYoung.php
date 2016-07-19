@@ -13,8 +13,10 @@ if (mysqli_connect_errno()) { //verify connection
 }
 else
 {
+    $id = $_POST['id'];
+
 # extract results mysqli_result::fetch_array
-    $query = " SELECT * FROM offertemobile ";
+    $query = " SELECT * FROM promozioni, offertemobile WHERE promozioni.id=offertemobile.ext AND promozioni.id=".$id;
 //query execution
     $result = $mysqli->query($query);
 //if there are data available

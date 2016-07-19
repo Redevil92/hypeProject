@@ -7,7 +7,7 @@ $(document).ready(function(){
         $("#heading_col_left").html("<img class='img-responsive' src='images/assistenza_intro.jpg'>");
         $("#p_title").html("Metodi di ricarica");
         $("#p_subtitle").html("Scegli il tipo di ricarica che si adatta di più alle tue esigenze");
-        $("#my_breadcrumb").html("<li><a href='TimIndex.html'>Home</a></li><li><a href=''>Assistenza</a></li><li><a href='Assistenza_MaxiCategorie.html?linea_servizi'>Gestione linea e servizi</a></li><li><a href='#'>Tutti i modi per ricaricare</a></li>");
+        $("#my_breadcrumb").html("<li><a href='TimIndex.html'>Home</a></li><li><a href=''>Assistenza</a></li><li><a href='Assistenza_MaxiCategorie.html?linea_servizi'>Gestione linea e servizi</a></li><li>Tutti i modi per ricaricare</li>");
     });
     getID();
 });

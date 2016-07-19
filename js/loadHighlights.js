@@ -7,7 +7,7 @@ $(document).ready(function(){
         $("#heading_col_left").html("<img class='img-responsive' src='images/assistenza_intro.jpg'>");
         $("#p_title").html("Highlights");
         $("#p_subtitle").html("Assistenza immediata");
-        $("#my_breadcrumb").html("<li><a href='#'>Home</a></li><li><a href='#' id='current_path'>Highlights</a></li>");
+        $("#my_breadcrumb").html("<li><a href='#'>Home</a></li><li>Highlights</li>");
     });
     getHighlights();
 });
@@ -23,7 +23,13 @@ function getHighlights(){
             var output = "<hr>";
 
             for(var i=0; i<assistance.length; i++){
-                output+="<div class='row'><div class='col-sm-6 hl_left'><span class="+assistance[i].Logo+"></span></div><div class='col-sm-6 hl_right'><a>"+assistance[i].Descrizione+"</a></div></div><hr>";
+
+                if(assistance[i].id==3){
+                    output+="<div class='row'><div class='col-sm-6 hl_left'><span class="+assistance[i].Logo+"></span></div><div class='col-sm-6 hl_right'><a href='Ricaricare.html?11'>"+assistance[i].Descrizione+"</a></div></div><hr>";
+                }
+                else {
+                    output += "<div class='row'><div class='col-sm-6 hl_left'><span class=" + assistance[i].Logo + "></span></div><div class='col-sm-6 hl_right'><a>" + assistance[i].Descrizione + "</a></div></div><hr>";
+                }
             }
 
             $("#assistenza_category").html(output);
