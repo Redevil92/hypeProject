@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $("#header").load("TimHeader.html", function () {
-        $("#assistenza").addClass("active");
+        $("#smart_life").addClass("active");
     });
     $("#footer").load("TimFooter.html");
     $("#heading").load("TimHeading.html", function () {

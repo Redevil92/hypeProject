@@ -2,7 +2,7 @@
 
 $(document).ready(function(){
     $("#header").load("TimHeader.html", function () {
-        $("#assistenza").addClass("active");
+        $("#smart_life").addClass("active");
     });
     $("#footer").load("TimFooter.html");
     $("#heading").load("TimHeading.html", function () {
@@ -21,7 +21,7 @@ function getSalute() {
         method: "POST",
         //dataType: "json", //type of data
         crossDomain: true, //localhost purposes
-        url: "http://polifamily.altervista.org/php/getSalute&Benessere.php", //Relative or absolute path to file.php file
+        url: "http://polifamily.altervista.org/php/getSalute_Benessere.php", //Relative or absolute path to file.php file
         success: function (response) {
             var smartLife = JSON.parse(response);
             var output = "";
@@ -57,7 +57,7 @@ function getSalute2() {
         method: "POST",
         //dataType: "json", //type of data
         crossDomain: true, //localhost purposes
-        url: "http://polifamily.altervista.org/php/getSalute&Benessere.php", //Relative or absolute path to file.php file
+        url: "http://polifamily.altervista.org/php/getSalute_Benessere.php", //Relative or absolute path to file.php file
         success: function (response) {
             var smartLife = JSON.parse(response);
             var output = "";
