@@ -1,6 +1,8 @@
 $(document).ready(function(){
     //load the TimHeader
-    $("#header").load("TimHeader.html");
+    $("#header").load("TimHeader.html", function () {
+        $("#prodotti").addClass("active");
+    });
     
     //load dinamic heading
 
