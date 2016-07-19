@@ -33,7 +33,7 @@ function getSingleDevice(value) {
         method: "POST",
         crossDomain: true, //localhost purposes
         data:{id : id, table : table},
-        url: "php/GetSingleDevice.php", //Relative or absolute path to file.php file
+        url: "http://polifamily.altervista.org/php/GetSingleDevice.php", //Relative or absolute path to file.php file
         success: function(response) {
             
             var device = JSON.parse(response);

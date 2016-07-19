@@ -23,7 +23,7 @@ function getMetodiRicarica(id){
     $.ajax({
         method: "POST",
         crossDomain: true, //localhost purposes
-        url: "php/getRicaricare.php", //Relative or absolute path to file.php file
+        url: "http://polifamily.altervista.org/php/getRicaricare.php", //Relative or absolute path to file.php file
         data: {id : id},
         success: function(response){
             var ricaricare = JSON.parse(response);

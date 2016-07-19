@@ -21,7 +21,7 @@ function getCasaFamiglia() {
         method: "POST",
         //dataType: "json", //type of data
         crossDomain: true, //localhost purposes
-        url: "php/getCasa&Famiglia.php", //Relative or absolute path to file.php file
+        url: "http://polifamily.altervista.org/php/getCasa&Famiglia.php", //Relative or absolute path to file.php file
         success: function (response) {
             var smartLife = JSON.parse(response);
             var title = "";
@@ -56,7 +56,7 @@ function getCasaFamiglia2() {
         method: "POST",
         //dataType: "json", //type of data
         crossDomain: true, //localhost purposes
-        url: "php/getCasa&Famiglia.php", //Relative or absolute path to file.php file
+        url: "http://polifamily.altervista.org/php/getCasa&Famiglia.php", //Relative or absolute path to file.php file
         success: function (response) {
             var smartLife = JSON.parse(response);
             var output = "";

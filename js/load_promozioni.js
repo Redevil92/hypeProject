@@ -42,7 +42,7 @@ function getPromozioneFisso() {
         method: "POST",
         //dataType: "json", //type of data
         crossDomain: true, //localhost purposes
-        url: "php/get_promozioni.php", //Relative or absolute path to file.php file
+        url: "http://polifamily.altervista.org/php/get_promozioni.php", //Relative or absolute path to file.php file
         success: function (response) {
             var promozioni = JSON.parse(response);
             var output = "";
@@ -104,7 +104,7 @@ function getPromMobile() {
         method: "POST",
         //dataType: "json", //type of data
         crossDomain: true, //localhost purposes
-        url: "php/get_promozioni.php", //Relative or absolute path to file.php file
+        url: "http://polifamily.altervista.org/php/get_promozioni.php", //Relative or absolute path to file.php file
         success: function (response) {
             var promozioni = JSON.parse(response);
             var output = "";
@@ -192,7 +192,7 @@ function getPromMobileFisso() {
         method: "POST",
         //dataType: "json", //type of data
         crossDomain: true, //localhost purposes
-        url: "php/get_promozioni.php", //Relative or absolute path to file.php file
+        url: "http://polifamily.altervista.org/php/get_promozioni.php", //Relative or absolute path to file.php file
         success: function (response) {
             var promozioni = JSON.parse(response);
             var output = "";
@@ -253,7 +253,7 @@ function getSmartProm() {
         method: "POST",
         //dataType: "json", //type of data
         crossDomain: true, //localhost purposes
-        url: "php/get_promozioni.php", //Relative or absolute path to file.php file
+        url: "http://polifamily.altervista.org/php/get_promozioni.php", //Relative or absolute path to file.php file
         success: function (response) {
             var promozioni = JSON.parse(response);
             var output = "";

@@ -17,7 +17,7 @@ function getHighlights(){
     $.ajax({
         method: "POST",
         crossDomain: true, //localhost purposes
-        url: "php/getHighlights.php", //Relative or absolute path to file.php file
+        url: "http://polifamily.altervista.org/php/getHighlights.php", //Relative or absolute path to file.php file
         success: function(response){
             var assistance = JSON.parse(response);
             var output = "<hr>";

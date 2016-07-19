@@ -16,7 +16,7 @@ function getSmartproducts() {
     $.ajax({
         method: "POST",
         crossDomain: true, //localhost purposes
-        url: "php/GetSmartproducts.php", //Relative or absolute path to file.php file
+        url: "http://polifamily.altervista.org/php/GetSmartproducts.php", //Relative or absolute path to file.php file
         success: function(response) {
             var smarts = JSON.parse(response);
             var sent = '';

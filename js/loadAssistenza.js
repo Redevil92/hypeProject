@@ -40,7 +40,7 @@ function getMaxCategory(max_cat){
         method: "POST",
         crossDomain: true, //localhost purposes
         data: {max_cat : max_cat},
-        url: "php/getAssistenza.php", //Relative or absolute path to file.php file
+        url: "http://polifamily.altervista.org/php/getAssistenza.php", //Relative or absolute path to file.php file
         success: function(response){
             var assistance = JSON.parse(response);
             var output = "<hr class='my_hr'>";

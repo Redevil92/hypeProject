@@ -24,7 +24,7 @@ function getTimInfo(id) {
         method: "POST",
         //dataType: "json", //type of data
         crossDomain: true, //localhost purposes
-        url: "php/getTimYoung.php", //Relative or absolute path to file.php file
+        url: "http://polifamily.altervista.org/php/getTimYoung.php", //Relative or absolute path to file.php file
         data: {id : id},
         success: function (response) {
             var promozioni = JSON.parse(response);

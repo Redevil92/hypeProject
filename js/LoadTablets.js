@@ -16,7 +16,7 @@ function getTablets() {
     $.ajax({
         method: "POST",
         crossDomain: true, //localhost purposes
-        url: "php/GetTablet.php", //Relative or absolute path to file.php file
+        url: "http://polifamily.altervista.org/php/GetTablet.php", //Relative or absolute path to file.php file
         success: function(response) {
             var tablets = JSON.parse(response);
             var sent = '';
