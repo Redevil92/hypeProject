@@ -3,7 +3,7 @@ $(document).ready(function () {
         $("#promozioni").addClass("active");
     });
     $("#footer").load("TimFooter.html");
-    $("#heading").load("TimHeading.html");
+    ready();
 })
 
 
@@ -117,11 +117,14 @@ function getPromMobile() {
 
             }
 
-            $("#heading_col_left").html("<img class='img-responsive' src='images/innovazioni_intro.png'>");
-            $("#p_title").html("Offerte Mobile");
-            $("#p_subtitle").html("Le migliori offerte per la tua linea mobile");
-            $("#my_breadcrumb").html("<li><a href='TimIndex.html'>Home</a></li><li><a href='#'>Promozioni</a></li><li><a href='#'>Mobile</a></li>");
-            $("#prom_mobile").html(output);
+            $("#heading").load("TimHeading.html", function () {
+                $("#heading_col_left").html("<img class='img-responsive' src='images/innovazioni_intro.png'>");
+                $("#p_title").html("Offerte Mobile");
+                $("#p_subtitle").html("Le migliori offerte per la tua linea mobile");
+                $("#my_breadcrumb").html("<li><a href='TimIndex.html'>Home</a></li><li><a href='#'>Promozioni</a></li><li><a href='#'>Mobile</a></li>");
+                $("#prom_mobile").html(output);
+            });
+
 
             var outputEstero = "";
 
@@ -256,12 +259,14 @@ function getSmartProm() {
 
 
             }
+            $("#heading").load("TimHeading.html", function () {
+                $("#heading_col_left").html("<img class='img-responsive' src='images/innovazioni_intro.png'>");
+                $("#p_title").html("Offerte Smart Life");
+                $("#p_subtitle").html("Il futuro è smart, scopri tutte le promozioni riguardanti il mondo connesso a TIM.");
+                $("#my_breadcrumb").html("<li><a href='TimIndex.html'>Home</a></li><li><a href='#'>Promozioni</a></li><li><a href='#'>Smart Life</a></li>");
+                $("#prom_mobile").html(output);
+            });
 
-            $("#heading_col_left").html("<img class='img-responsive' src='images/innovazioni_intro.png'>");
-            $("#p_title").html("Offerte Smart Life");
-            $("#p_subtitle").html("Il futuro è smart, scopri tutte le promozioni riguardanti il mondo connesso a TIM.");
-            $("#my_breadcrumb").html("<li><a href='TimIndex.html'>Home</a></li><li><a href='#'>Promozioni</a></li><li><a href='#'>Smart Life</a></li>");
-            $("#prom_mobile").html(output);
 
             $("#prom_smart").html(output);
 
@@ -309,11 +314,14 @@ function getTimInfo() {
                 "</div><div class='col-sm-5'><img src=" + promozioni[i].ImmagineTel + "> </div><div class='col-sm-1'></div></div> </div>";
 
 
-            $("#heading_col_left").html("<img class='img-responsive' src='images/innovazioni_intro.png'>");
-            $("#p_title").html("Offerte Smart Life");
-            $("#p_subtitle").html("Le migliori offerte per la tua linea mobile.");
-            $("#my_breadcrumb").html("<li><a href='TimIndex.html'>Home</a></li><li><a href='#'>Promozioni</a></li><li><a href='#'>Mobile</a></li><li><a href='#'>TIM Young</a></li>");
-            $("#prom_mobile").html(output);
+            $("#heading").load("TimHeading.html", function () {
+                $("#heading_col_left").html("<img class='img-responsive' src='images/innovazioni_intro.png'>");
+                $("#p_title").html("Offerte Smart Life");
+                $("#p_subtitle").html("Le migliori offerte per la tua linea mobile.");
+                $("#my_breadcrumb").html("<li><a href='TimIndex.html'>Home</a></li><li><a href='#'>Promozioni</a></li><li><a href='#'>Mobile</a></li><li><a href='#'>TIM Young</a></li>");
+                $("#prom_mobile").html(output);
+            });
+
 
             $("#prom_timInfoDescr").html(output);
 

@@ -11,11 +11,11 @@ $(document).ready(function(){
         $("#p_subtitle").html("Scopri come Salute e Benessere possono cambiare in meglio la tua vita facendoti tornare <br>la voglia di movimento.");
         $("#my_breadcrumb").html("<li><a href='TimIndex.html'>Home</a></li><li><a href=''>Servizi Smart Life</a></li><li><a href='#' id='current_path'>Salute e Benessere</a></li>");
     });
-    getLineaServizi2();
-    getLineaServizi();
+    getSalute2();
+    getSalute();
 });
 
-function getLineaServizi() {
+function getSalute() {
 
     $.ajax({
         method: "POST",
@@ -51,7 +51,7 @@ function getLineaServizi() {
     });
 }
 
-function getLineaServizi2() {
+function getSalute2() {
 
     $.ajax({
         method: "POST",
