@@ -6,7 +6,7 @@ $(document).ready(function(){
     $("#heading").load("TimHeading.html", function () {
         $("#heading_col_left").html("<img class='img-responsive' src='images/assistenza_intro.jpg'>");
         $("#p_title").html("Assistenza");
-        $("#my_breadcrumb").html("<li><a href='TimIndex.html'>Home</a></li><li><a href=''>Assistenza</a></li><li id='current_path'></li>");
+        $("#my_breadcrumb").html("<li><a href='Assistenza.html'>Assistenza</a></li><li id='current_path'></li>");
     });
     findMaxCategory();
 });
