@@ -80,7 +80,7 @@ function getPromozioneFisso() {
                 $("#heading_col_left").html("<img class='img-responsive' src='images/fisso_intro.png'>");
                 $("#p_title").html("Offerte Fisso");
                 $("#p_subtitle").html("Le migliori offerte per la tua linea fissa.");
-                $("#my_breadcrumb").html("<li><a href='TimIndex.html'>Home</a></li><li><a href='#'>Promozioni</a></li><li>Fisso</li>");
+                $("#my_breadcrumb").html("<li><a href='Promozioni.html'>Promozioni</a></li><li>Fisso</li>");
             });
 
             $("#promozione_fisso").html(output);
@@ -150,7 +150,7 @@ function getPromMobile() {
                 $("#heading_col_left").html("<img class='img-responsive' src='images/innovazioni_intro.png'>");
                 $("#p_title").html("Offerte Mobile");
                 $("#p_subtitle").html("Le migliori offerte per la tua linea mobile");
-                $("#my_breadcrumb").html("<li><a href='TimIndex.html'>Home</a></li><li><a href='#'>Promozioni</a></li><li><a href='#'>Mobile</a></li>");
+                $("#my_breadcrumb").html("<li><a href='Promozioni.html'>Promozioni</a></li><li><a href='#'>Mobile</a></li>");
             });
 
             $("#prom_mobile").html(output);
@@ -230,7 +230,7 @@ function getPromMobileFisso() {
                 $("#heading_col_left").html("<img class='img-responsive' src='images/mobilefisso_intro.jpg'>");
                 $("#p_title").html("Offerte Mobile più fisso");
                 $("#p_subtitle").html("Tutto insieme con la semplicità e convenienza di un unico conto.");
-                $("#my_breadcrumb").html("<li><a href='TimIndex.html'>Home</a></li><li><a href='#'>Promozioni</a></li><li><a href='#'>Mobile più fisso</a></li>");
+                $("#my_breadcrumb").html("<li><a href='Promozioni.html'>Promozioni</a></li><li><a href='#'>Mobile più fisso</a></li>");
             });
 
             //$("#prom_mobile").html(output);
@@ -296,7 +296,7 @@ function getSmartProm() {
                 $("#heading_col_left").html("<img class='img-responsive' src='images/innovazioni_intro.png'>");
                 $("#p_title").html("Offerte Smart Life");
                 $("#p_subtitle").html("Il futuro è smart, scopri tutte le promozioni riguardanti il mondo connesso a TIM.");
-                $("#my_breadcrumb").html("<li><a href='TimIndex.html'>Home</a></li><li><a href='#'>Promozioni</a></li><li><a href='#'>Smart Life</a></li>");
+                $("#my_breadcrumb").html("><li><a href='Promozioni.html'>Promozioni</a></li><li><a href='#'>Smart Life</a></li>");
             });
 
             //$("#prom_mobile").html(output);
