@@ -1,14 +1,21 @@
-$(document).ready(ready);
-
-function ready(){
-
+$(document).ready(function(){
+    $("#header").load("TimHeader.html", function () {
+        $("#assistenza").addClass("active");
+    });
+    $("#footer").load("TimFooter.html");
+    $("#heading").load("TimHeading.html", function () {
+        $("#heading_col_left").html("<img class='img-responsive' src='images/assistenza_intro.jpg'>");
+        $("#p_title").html("Servizi alla Persona");
+        $("#p_subtitle").html("Un nuovo approccio al mondo dell'e-payment e dell'identità digitale.");
+        $("#my_breadcrumb").html("<li><a href='TimIndex.html'>Home</a></li><li><a href=''>Servizi Smart Life</a></li><li><a href='#' id='current_path'>Servizi alla Persona</a></li>");
+    });
     getDescrizione();
     getServiziAllaPersona();
     getServiziAllaPersonaRounded();
     getServiziAllaPeronaInfor();
+});
 
 
-}
 
 function getDescrizione(){
     $.ajax({

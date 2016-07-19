@@ -14,7 +14,7 @@ if (mysqli_connect_errno()) { //verify connection
 else
 {
 # extract results mysqli_result::fetch_array
-    $query = " SELECT * FROM OfferteMobile ";
+    $query = " SELECT * FROM offertemobile ";
 //query execution
     $result = $mysqli->query($query);
 //if there are data available

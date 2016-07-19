@@ -1,25 +1,19 @@
-$(document).ready(ready);
 
-function ready(){
 
+$(document).ready(function(){
+    $("#header").load("TimHeader.html", function () {
+        $("#assistenza").addClass("active");
+    });
+    $("#footer").load("TimFooter.html");
+    $("#heading").load("TimHeading.html", function () {
+        $("#heading_col_left").html("<img class='img-responsive' src='images/assistenza_intro.jpg'>");
+        $("#p_title").html("Salute e Benessere");
+        $("#p_subtitle").html("Scopri come Salute e Benessere possono cambiare in meglio la tua vita facendoti tornare <br>la voglia di movimento.");
+        $("#my_breadcrumb").html("<li><a href='TimIndex.html'>Home</a></li><li><a href=''>Servizi Smart Life</a></li><li><a href='#' id='current_path'>Salute e Benessere</a></li>");
+    });
     getLineaServizi2();
     getLineaServizi();
-
-}
-
-/**
- function getMaxCategory() {
-    var id = '';
-    var check = document.location.pathname.toString();
-    switch(check){
-        case "Assistenza_GestioneLineaServizi.html":
-            id = 'Gestione linea e servizi';
-            break;
-        default:
-            break;
-    }
-    return id;
-}**/
+});
 
 function getLineaServizi() {
 

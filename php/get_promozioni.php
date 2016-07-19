@@ -14,7 +14,7 @@ if (mysqli_connect_errno()) { //verify connection
 else
 {
 # extract results mysqli_result::fetch_array
-    $query = " SELECT * FROM Promozioni ORDER BY Ordine ";
+    $query = " SELECT * FROM promozioni ORDER BY Ordine ";
 //query execution
     $result = $mysqli->query($query);
 //if there are data available

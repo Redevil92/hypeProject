@@ -1,26 +1,20 @@
-$(document).ready(ready);
-
-function ready(){
-
+$(document).ready(function(){
+    $("#header").load("TimHeader.html", function () {
+        $("#assistenza").addClass("active");
+    });
+    $("#footer").load("TimFooter.html");
+    $("#heading").load("TimHeading.html", function () {
+        $("#heading_col_left").html("<img class='img-responsive' src='images/assistenza_intro.jpg'>");
+        $("#p_title").html("TV e Entertainement");
+        $("#p_subtitle").html("SERIE TV, FILM, MUSICA, GIOCHI E CALCIO<br>
+            Scopri il tipo di intrattenimento che preferisci. Il divertimento comincia subito!<br>
+            Quando vuoi e come vuoi.");
+        $("#my_breadcrumb").html("<li><a href='TimIndex.html'>Home</a></li><li><a href=''>Servizi Smart Life</a></li><li><a href='#' id='current_path'>TV e Entertainemnet</a></li>");
+    });
     getTvEnt();
     getTvSerieAInfo();
+});
 
-
-}
-
-/**
- function getMaxCategory() {
-    var id = '';
-    var check = document.location.pathname.toString();
-    switch(check){
-        case "Assistenza_GestioneLineaServizi.html":
-            id = 'Gestione linea e servizi';
-            break;
-        default:
-            break;
-    }
-    return id;
-}**/
 
 
 function getTvEnt() {

@@ -14,7 +14,7 @@ exit(); //do nothing else
 else
 {
 # extract results mysqli_result::fetch_array
-$query = " SELECT * FROM ServiziSmartLife WHERE Pagina = 'ServiziAllaPersona' ORDER BY Ordine ";
+$query = " SELECT * FROM servizismartLife WHERE Pagina = 'ServiziAllaPersona' ORDER BY Ordine ";
 //query execution
 $result = $mysqli->query($query);
 //if there are data available
