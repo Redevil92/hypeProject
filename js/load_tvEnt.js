@@ -70,7 +70,7 @@ function getTvSerieAInfo() {
             console.log(response);
 
 
-            output += "<div><h4 style='margin-left: 4%; margin-right: 4%'>"+smartLife[1].Info+"</h4>></div>";
+            output += "<div><p  style='margin-left: 6%; margin-right: 4%; font-size: 18px'>"+smartLife[1].Info+"</p>></div>";
 
             $("#SerieATimInfo").html(output);
 
