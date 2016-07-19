@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>TIM Website</title>
+
+    <!-- Meta -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- JQuery & Bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <!-- Personal CSS -->
+    <link rel="stylesheet" type="text/css" href="css/mainAle.css">
+    <link rel="stylesheet" type="text/css" href="css/mainDave.css">
+    <link rel="stylesheet" type="text/css" href="css/mainSte.css">
+
+    <!-- Loading pages -->
+    <script>
+        $(document).ready(function(){
+            $("#header").load("TimHeader.html", function () {
+                $("#prodotti").addClass("active");
+            });
+            $("#footer").load("TimFooter.html");
+            $("#heading").load("TimHeading.html", function () {
+                $("#heading_col_left").html("<img class='img-responsive' src='images/image_prodotti_intro.jpg'>");
+                $("#p_title").html("Prodotti");
+                $("#p_subtitle").html("Una vasta scelta di device per ogni tua esigenza");
+                $("#my_breadcrumb").html("<li>Prodotti</li>");
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+
+<!-- Header -->
+<div id="header"></div>
+
+<!-- Heading -->
+<div class="jumbotron" id="heading"></div>
+
+<!-- Container -->
+<div class="container text-center" id="page_intro">
+    <hr class="my_hr">
+    <div class="row">
+        <div class="col-sm-3">
+            <a href="Device_Smartphone.html"><img class="img-responsive" src="images/01_SmartphoneTelefoni_1.png"></a><br>
+            <p>Smartphone e telefoni</p>
+        </div>
+        <div class="col-sm-3">
+            <a href="Device_Tablet.html"><img class="img-responsive" src="images/02_TabletComputer.png"></a><br>
+            <p>Tablet</p>
+        </div>
+        <div class="col-sm-3">
+            <a href="Device_Modem_Networking.html"><img class="img-responsive" src="images/03_ModemChiavette.png"></a><br>
+            <p>Modem e networking</p>
+        </div>
+        <div class="col-sm-3">
+            <a href="Device_Smartlife.html"><img class="img-responsive" src="images/04_TVDigitalHome.png"></a><br>
+            <p>TV e smartliving</p>
+        </div>
+    </div>
+    <hr class="my_hr">
+</div>
+
+<!-- Footer -->
+<div id="footer"></div>
+
+</body>
+
+</html>

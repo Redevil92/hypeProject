@@ -136,6 +136,14 @@
     margin-left: 50%;
 }
 
+.bottom-img-home {
+    height: 300px;
+    width: 100%;
+}
+
+.btn-home-bottom {
+    padding: 0;
+}
 /* STOP HOME PAGE */
 
 .title_brand {
