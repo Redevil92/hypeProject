@@ -65,19 +65,19 @@ function getPromozioneFisso() {
                         " offerte da TIM per la tua rete di casa</h3>";
 
                 output += "<div style='margin: 5%'><div class='row'><div class ='col-sm-6'><div class = 'row'><div class='col-sm-1'></div>" +
-                    "<div class='col-sm-6'><img style='width: ' src=" + prom_fisso[i].Immagine + "></div><div class='col-sm-4'>" +
+                    "<div class='col-sm-6'><img class='img-responsive' style='height: 15vw; width: 20vw' src=" + prom_fisso[i].Immagine + "></div><div class='col-sm-4'>" +
                     "<h3 style='color: lightblue'>" + prom_fisso[i].NomePromozione + "</h3><h4>" + prom_fisso[i].Descrizione + "</h4>" +
                     "<h4 style='color: red'>" + prom_fisso[i].Prezzo + "</h4><button type='button' class='btn btn-primary'>SCOPRI</button></div>" +
                     "<div class='col-sm-1'></div> </div></div>"; //end of the first part
                 i++;
                 output += "<div class ='col-sm-6'><div class = 'row'><div class='col-sm-1'></div>" +
-                    "<div class='col-sm-6'><img class='img-responsive' src=" + prom_fisso[i].Immagine + "></div><div class='col-sm-4'>" +
+                    "<div class='col-sm-6'><img style='height: 15vw; width: 30vw' class='img-responsive' src=" + prom_fisso[i].Immagine + "></div><div class='col-sm-4'>" +
                     "<h3 style='color: lightblue'>" + prom_fisso[i].NomePromozione + "</h3><h4>" + prom_fisso[i].Descrizione + "</h4>" +
                     "<h4 style='color: red'>" + prom_fisso[i].Prezzo + "</h4><button type='button' class='btn btn-primary'>SCOPRI</button></div></div></div></div>"
             }
 
             $("#heading").load("TimHeading.html", function () {
-                $("#heading_col_left").html("<img class='img-responsive' src='images/innovazioni_intro.png'>");
+                $("#heading_col_left").html("<img class='img-responsive' src='images/fisso_intro.png'>");
                 $("#p_title").html("Offerte Fisso");
                 $("#p_subtitle").html("Le migliori offerte per la tua linea fissa.");
                 $("#my_breadcrumb").html("<li><a href='TimIndex.html'>Home</a></li><li><a href='#'>Promozioni</a></li><li>Fisso</li>");
@@ -117,8 +117,8 @@ function getPromMobile() {
                     prom_mobile[j++] = promozioni[i];
             }
 
+            console.log(prom_mobile);
 
-            console.log(response);
             var i = 0;
 
             for (; i < prom_mobile.length - 4; i++) {
@@ -133,15 +133,14 @@ function getPromMobile() {
                     "<h4 style='color: red'>" + prom_mobile[i].Prezzo + "</h4>";
 
                 if(prom_mobile[i].id==13){
-                    output += "</div><div class = 'col-sm-5'>" +
-                        "<img src=" + prom_mobile[i].Immagine + "></div><div class='col-sm-1'></div></div>" +
-                        "<a href='Promozioni_mobile_young.html?" + prom_mobile[i].id + "'><button type='button' class='btn btn-primary' style='margin-left: 45%; margin-bottom: 10px' >SCOPRI L'OFFERTA</button></a>" +
+                    output += "<a href='Promozioni_mobile_young.html?" + prom_mobile[i].id + "'>" +
+                        "<button type='button' class='btn btn-primary' style='margin-left: 35%; margin-bottom: 10px' >SCOPRI L'OFFERTA</button></a></div><div class = 'col-sm-5'>" +
+                        "<img style='width: 40vw; height: 26vw' src=" + prom_mobile[i].Immagine + "></div><div class='col-sm-1'></div></div>" +
                         "</div>";
                 }
                 else{
-                    output += "</div><div class = 'col-sm-5'>" +
-                        "<img src=" + prom_mobile[i].Immagine + "></div><div class='col-sm-1'></div></div>" +
-                        "<button type='button' class='btn btn-primary' style='margin-left: 45%; margin-bottom: 10px' >SCOPRI L'OFFERTA</button>" +
+                    output += "<button type='button' class='btn btn-primary' style='margin-left: 35%; margin-bottom: 10px' >SCOPRI L'OFFERTA</button></div><div class = 'col-sm-5'>" +
+                        "<img style='width: 40vw; height: 30vw' src=" + prom_mobile[i].Immagine + "></div><div class='col-sm-1'></div></div>" +
                         "</div>";
                 }
 
@@ -282,10 +281,13 @@ function getSmartProm() {
                         "<h5 style='margin: auto'>Guarda i tutti i video-goal, le video-sintesi, video-news e " +
                         "i video tg del campionato di Calcio di Serie A</h5> ";
                 }
+                if( i == 0)
+                    output += "<a href='SmartLife_TVeEnt_SerieA.html'> ";
                 output +="<button type='button' class='btn btn-primary' style='margin-left: 20%; margin-bottom: 10px' >SCOPRI TUTTI DETTAGLI</button>";
-
+                if(i==0)
+                    output+="</a>";
                 output += "</div><div class = 'col-sm-5'>" +
-                    "<img src=" + prom_smart[i].Immagine + "></div><div class='col-sm-1'></div></div>" +
+                    "<img style='width: 45vw; height: 30vw' src=" + prom_smart[i].Immagine + "></div><div class='col-sm-1'></div></div>" +
                     "</div>";
 
 
