@@ -89,3 +89,8 @@ button{
     color: lightblue;
 
 }
+
+img.squareImgMedium{
+    width: 300px;
+    height: 300px;
+}

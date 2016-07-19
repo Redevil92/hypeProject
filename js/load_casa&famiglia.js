@@ -9,13 +9,13 @@ $(document).ready(function(){
         $("#p_subtitle").html("Smart Life vuol dire anche una vita più semplice e sicura <br> anche per la tua casa e i tuoi cari.");
         $("#my_breadcrumb").html("<li><a href='TimIndex.html'>Home</a></li><li><a href=''>Servizi Smart Life</a></li><li><a href='#' id='current_path'>Casa e Famiglia</a></li>");
     });
-    getLineaServizi();
-    getLineaServizi2();
+    getCasaFamiglia();
+    getCasaFamiglia2();
 });
 
 
 
-function getLineaServizi() {
+function getCasaFamiglia() {
 
     $.ajax({
         method: "POST",
@@ -50,7 +50,7 @@ function getLineaServizi() {
     });
 }
 
-function getLineaServizi2() {
+function getCasaFamiglia2() {
 
     $.ajax({
         method: "POST",
@@ -64,20 +64,22 @@ function getLineaServizi2() {
 
             console.log(response);
 
-            for (var i = 1; i < smartLife.length; i++) {
+           // for (var i = 1; i < smartLife.length; i++)
                 output += "<div style='margin-top: 20px; border: solid 1px gray; margin: 10%;'>" +
                             "<div class='row'>" +
                                 "<div class='col-sm-2'></div>" +
                                     "<div class='col-sm-4'>" +
-                                        "<h3 style='color: lightblue; align-content: center'>"+smartLife[i].TitoloArg+"</h3>"+
-                                            "<h4>"+ smartLife[i].DescrizioneVeloce +"</h4>"+
-                                                "<h5>"+ smartLife[i].Descrizione +"</h5>";
+                                        "<h3 style='color: lightblue; align-content: center'>"+smartLife[1].TitoloArg+"</h3>"+
+                                            "<h4>"+ smartLife[1].DescrizioneVeloce +"</h4>"+
+                                                "<h5>"+ smartLife[2].Descrizione +"</h5>"+"<h4>"+ smartLife[1].DescrizioneVeloce +"</h4>" +
+                    "                               "<h5>"+ smartLife[2].Descrizione +"</h5>";
+
                 output += "</div><div class = 'col-sm-4'>" +
                               "<img src=" + smartLife[i].Immagine + "></div><div class='col-sm-2'></div></div>" +
                                 "<button type='button' class='btn btn-primary' style='margin-left: 45%; margin-bottom: 10px' >SCOPRI I DETTAGLI</button>" +
-                                    "</div>"
+                                    "</div>";
                
-            }
+
 
             $("#casa_all").html(output);
           

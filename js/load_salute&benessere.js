@@ -6,7 +6,7 @@ $(document).ready(function(){
     });
     $("#footer").load("TimFooter.html");
     $("#heading").load("TimHeading.html", function () {
-        $("#heading_col_left").html("<img class='img-responsive' src='images/assistenza_intro.jpg'>");
+        $("#heading_col_left").html("<img class='img-responsive' src='images/salute&benessere_intro.png'>");
         $("#p_title").html("Salute e Benessere");
         $("#p_subtitle").html("Scopri come Salute e Benessere possono cambiare in meglio la tua vita facendoti tornare <br>la voglia di movimento.");
         $("#my_breadcrumb").html("<li><a href='TimIndex.html'>Home</a></li><li><a href=''>Servizi Smart Life</a></li><li><a href='#' id='current_path'>Salute e Benessere</a></li>");
@@ -36,7 +36,7 @@ function getSalute() {
                 "<h4>"+ smartLife[2].DescrizioneVeloce +"</h4>"+
                 "<h5>"+ smartLife[2].Descrizione +"</h5>";
             output += "</div><div class = 'col-sm-5'>" +
-                "<img src=" + smartLife[2].Immagine + "></div><div class='col-sm-1'></div></div>" +
+                "<img style='width: 30vw; height: 30vw' class='squareImgMedium img-responsive' src=" + smartLife[2].Immagine + "></div><div class='col-sm-1'></div></div>" +
                 "<button type='button' class='btn btn-primary' style='margin-left: 45%; margin-bottom: 10px' >SCOPRI I DETTAGLI</button>" +
                 "</div>";
 
@@ -73,7 +73,7 @@ function getSalute2() {
                     "<h3 style='color: lightblue; align-content: center'>"+smartLife[i].TitoloArg+"</h3>"+
                     "<h5>"+ smartLife[i].Descrizione +"</h5>";
                 output += "</div><div class = 'col-sm-4'>" +
-                    "<img src=" + smartLife[i].Immagine + "></div><div class='col-sm-2'></div></div>" +
+                    "<img style='width: 45vw; height: 30vw' class=' img-responsive' src=" + smartLife[i].Immagine + "></div><div class='col-sm-2'></div></div>" +
                     "<button type='button' class='btn btn-primary' style='margin-left: 45%; margin-bottom: 10px' >SCOPRI I DETTAGLI</button>" +
                     "</div>";
 
