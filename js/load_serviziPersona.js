@@ -7,7 +7,7 @@ $(document).ready(function(){
         $("#heading_col_left").html("<img class='img-responsive' src='images/smart_servizi_intro.png'>");
         $("#p_title").html("Servizi alla Persona");
         $("#p_subtitle").html("Un nuovo approccio al mondo dell'e-payment e dell'identità digitale.");
-        $("#my_breadcrumb").html("<li><a href='SmartLife.html'>Servizi Smart Life</a></li><li><a href='#' id='current_path'>Servizi alla Persona</a></li>");
+        $("#my_breadcrumb").html("<li><a href='SmartLife.html'>Servizi Smart Life</a></li><li>Servizi alla Persona</li>");
     });
     getDescrizione();
     getServiziAllaPersona();

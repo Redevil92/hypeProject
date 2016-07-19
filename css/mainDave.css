@@ -201,8 +201,8 @@
 
 .squared {
     border: 0.1vw solid aqua;
-    padding: 1.2vw;
-    margin-top: 1.7vw;
+    display: block;
+    margin: auto;
 }
 
 .floated-left {

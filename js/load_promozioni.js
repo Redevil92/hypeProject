@@ -296,7 +296,7 @@ function getSmartProm() {
                 $("#heading_col_left").html("<img class='img-responsive' src='images/intro_smartLife.png'>");
                 $("#p_title").html("Offerte Smart Life");
                 $("#p_subtitle").html("Il futuro è smart, scopri tutte le promozioni riguardanti il mondo connesso a TIM.");
-                $("#my_breadcrumb").html("><li><a href='Promozioni.html'>Promozioni</a></li>Smart Life</li>");
+                $("#my_breadcrumb").html("<li><a href='Promozioni.html'>Promozioni</a></li>Smart Life</li>");
             });
 
             //$("#prom_mobile").html(output);

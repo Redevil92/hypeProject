@@ -7,7 +7,7 @@ $(document).ready(function(){
         $("#heading_col_left").html("<img class='img-responsive' src='images/intro_famiglia.png'>");
         $("#p_title").html("Casa e Famiglia");
         $("#p_subtitle").html("Smart Life vuol dire anche una vita più semplice e sicura <br> anche per la tua casa e i tuoi cari.");
-        $("#my_breadcrumb").html("<li><a href='SmartLife.html'>Servizi Smart Life</a></li><li><a href='#' id='current_path'>Casa e Famiglia</a></li>");
+        $("#my_breadcrumb").html("<li><a href='SmartLife.html'>Servizi Smart Life</a></li><li>Casa e Famiglia</li>");
     });
     getCasaFamiglia();
     getCasaFamiglia2();
