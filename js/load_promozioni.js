@@ -163,13 +163,13 @@ function getPromMobile() {
 
 
                 outputEstero += "<div style='margin: 5%'><div class='row'><div class ='col-sm-6'><div class = 'row'><div class='col-sm-1'></div>" +
-                    "<div class='col-sm-6'><img src=" + prom_mobile[i].Immagine + "></div><div class='col-sm-4'>" +
+                    "<div class='col-sm-6'><img class='img-responsive' style='width: 25vw; height: 15vw' src=" + prom_mobile[i].Immagine + "></div><div class='col-sm-4'>" +
                     "<h3 style='color: lightblue'>" + prom_mobile[i].NomePromozione + "</h3><h4>" + prom_mobile[i].Descrizione + "</h4>" +
                     "<h4 style='color: red'>" + prom_mobile[i].Prezzo + "</h4><button type='button' class='btn btn-primary'>SCOPRI</button></div>" +
                     "<div class='col-sm-1'></div> </div></div>"; //end of the first part
                 i++;
                 outputEstero += "<div class ='col-sm-6'><div class = 'row'><div class='col-sm-1'></div>" +
-                    "<div class='col-sm-6'><img src=" + prom_mobile[i].Immagine + "></div><div class='col-sm-4'>" +
+                    "<div class='col-sm-6'><img class='img-responsive' style='width: 25vw; height: 15vw' src=" + prom_mobile[i].Immagine + "></div><div class='col-sm-4'>" +
                     "<h3 style='color: lightblue'>" + prom_mobile[i].NomePromozione + "</h3><h4>" + prom_mobile[i].Descrizione + "</h4>" +
                     "<h4 style='color: red'>" + prom_mobile[i].Prezzo + "</h4><button type='button' class='btn btn-primary'>SCOPRI</button></div></div></div></div>"
             }
