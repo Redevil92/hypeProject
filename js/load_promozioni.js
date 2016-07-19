@@ -22,7 +22,7 @@ function ready(){
         case '/hypeProject/Promozioni_fisso&mobile.html':
             getPromMobileFisso();
             break;
-        case '/hypeProject/Promozione_smartLife.html':
+        case '/hypeProject/Promozioni_smartLife.html':
             getSmartProm();
             break;
         default:
@@ -218,17 +218,17 @@ function getPromMobileFisso() {
                     "<div class='col-sm-1'></div>" +
                     "<div class='col-sm-5'>" +
                     "<h3 style='color: lightblue; align-content: center'>" + prom_fissoPiuMobile[i].NomePromozione + "</h3>" +
-                    "<h4>" + prom_fissoPiuMobile[i].Descrizione + "</h4>" +
-                    "<h4 style='color: red'>" + prom_fissoPiuMobile[i].Prezzo + "</h4>";
+                    "<p style='font-size: 25px'>" + prom_fissoPiuMobile[i].Descrizione + "</p>" +
+                    "<h4 style='color: red; font-size: 30px'>" + prom_fissoPiuMobile[i].Prezzo + "</h4>";
                 output += "</div><div class = 'col-sm-5'>" +
-                    "<img src=" + prom_fissoPiuMobile[i].Immagine + "></div><div class='col-sm-1'></div></div>" +
+                    "<img style='width: 45vw; height: 28vw' src=" + prom_fissoPiuMobile[i].Immagine + "></div><div class='col-sm-1'></div></div>" +
                     "<button type='button' class='btn btn-primary' style='margin-left: 40%; margin-bottom: 10px' >SCOPRI L'OFFERTA</button><hr id = 'smartLine'>" +
                     "</div>";
 
             }
 
             $("#heading").load("TimHeading.html", function () {
-                $("#heading_col_left").html("<img class='img-responsive' src='images/innovazioni_intro.png'>");
+                $("#heading_col_left").html("<img class='img-responsive' src='images/mobilefisso_intro.jpg'>");
                 $("#p_title").html("Offerte Mobile più fisso");
                 $("#p_subtitle").html("Tutto insieme con la semplicità e convenienza di un unico conto.");
                 $("#my_breadcrumb").html("<li><a href='TimIndex.html'>Home</a></li><li><a href='#'>Promozioni</a></li><li><a href='#'>Mobile più fisso</a></li>");
@@ -254,7 +254,7 @@ function getSmartProm() {
         method: "POST",
         //dataType: "json", //type of data
         crossDomain: true, //localhost purposes
-        url: "php/getTimYoung.php", //Relative or absolute path to file.php file
+        url: "php/get_promozioni.php", //Relative or absolute path to file.php file
         success: function (response) {
             var promozioni = JSON.parse(response);
             var output = "";
