@@ -89,7 +89,7 @@ function getMaxCategory(max_cat){
                         if(result2[k]==assistance[i].SottoCategoria){
 
                             if(assistance[i].id==11){
-                                output+="<a id='spec_link' href='Ricaricare.html?" + assistance[i].id + "'>" + assistance[i].Descrizione + "</a><br>";
+                                output+="<a href='Ricaricare.html?" + assistance[i].id + "'><span class='glyphicon glyphicon-hand-right'></span> " + assistance[i].Descrizione + "</a><br>";
                             }
                             else{
                                 output+="<a>" + assistance[i].Descrizione + "</a><br>";  //Print 'Descrizione'

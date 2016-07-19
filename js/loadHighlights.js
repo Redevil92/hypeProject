@@ -25,7 +25,7 @@ function getHighlights(){
             for(var i=0; i<assistance.length; i++){
 
                 if(assistance[i].id==3){
-                    output+="<div class='row'><div class='col-sm-6 hl_left'><span class="+assistance[i].Logo+"></span></div><div class='col-sm-6 hl_right'><a href='Ricaricare.html?11'>"+assistance[i].Descrizione+"</a></div></div><hr>";
+                    output+="<div class='row'><div class='col-sm-6 hl_left'><span class="+assistance[i].Logo+"></span></div><div class='col-sm-6 hl_right'><a href='Ricaricare.html?11'>"+assistance[i].Descrizione+"<span class='glyphicon glyphicon-hand-left'></span></a></div></div><hr>";
                 }
                 else {
                     output += "<div class='row'><div class='col-sm-6 hl_left'><span class=" + assistance[i].Logo + "></span></div><div class='col-sm-6 hl_right'><a>" + assistance[i].Descrizione + "</a></div></div><hr>";
