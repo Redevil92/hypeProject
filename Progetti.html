@@ -20,9 +20,17 @@
 
     <!-- Loading pages -->
     <script>
-        $(function(){
-            $("#header").load("TimHeader.html");
+        $(document).ready(function(){
+            $("#header").load("TimHeader.html", function () {
+                $("#chi_siamo").addClass("active");
+            });
             $("#footer").load("TimFooter.html");
+            $("#heading").load("TimHeading.html", function () {
+                $("#heading_col_left").html("<img class='img-responsive' src='images/progetti_intro.png'>");
+                $("#p_title").html("Progetti");
+                $("#p_subtitle").html("Il cantiere delle nostre idee");
+                $("#my_breadcrumb").html("<li><a href='TimIndex.html'>Home</a></li><li><a href='#'>Progetti</a></li>");
+            });
         });
     </script>
 
@@ -34,22 +42,7 @@
 <div id="header"></div>
 
 <!-- Heading -->
-<div class="jumbotron" id="jumbotron_heading">
-    <div class="row">
-        <div class="col-sm-6" id="heading_col_left">
-            <img class="img-responsive" src="images/progetti_intro.png">
-        </div>
-        <div class="col-sm-6" id="heading_col_right">
-            <p id="p_title">Progetti</p>
-            <p id="p_subtitle">Il cantiere delle nostre idee</p>
-        </div>
-    </div>
-    <ul class="breadcrumb" id="my_breadcrumb">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Chi siamo</a></li>
-        <li><a href="#">Progetti</a></li>
-    </ul>
-</div>
+<div class="jumbotron" id="heading"></div>
 
 <!-- Container -->
 <div class="container text-center" id="pro_inn_container">

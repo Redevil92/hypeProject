@@ -1,5 +1,7 @@
 $(document).ready(function(){
-    $("#header").load("TimHeader.html");
+    $("#header").load("TimHeader.html", function () {
+        $("#assistenza").addClass("active");
+    });
     $("#footer").load("TimFooter.html");
     $("#heading").load("TimHeading.html", function () {
         $("#heading_col_left").html("<img class='img-responsive' src='images/assistenza_intro.jpg'>");
@@ -87,7 +89,13 @@ function getMaxCategory(max_cat){
                     for(var i=0; i<assistance.length; i++){
                         if(result2[k]==assistance[i].SottoCategoria){
 
-                            output+="<a href='#'>" + assistance[i].Descrizione + "</a><br>";  //Print 'Descrizione'
+                            if(assistance[i].id==11){
+                                output+="<a href='Ricaricare.html?" + assistance[i].id + "'>" + assistance[i].Descrizione + "</a><br>";
+                            }
+                            else{
+                                output+="<a href='#'>" + assistance[i].Descrizione + "</a><br>";  //Print 'Descrizione'
+                            }
+
 
                         }
                     }
