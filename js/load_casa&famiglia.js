@@ -64,21 +64,22 @@ function getCasaFamiglia2() {
 
             console.log(response);
 
-           // for (var i = 1; i < smartLife.length; i++)
+           for (var i = 1; i < smartLife.length; i++)
                 output += "<div style='margin-top: 20px; border: solid 1px gray; margin: 10%;'>" +
                             "<div class='row'>" +
                                 "<div class='col-sm-2'></div>" +
                                     "<div class='col-sm-4'>" +
                                         "<h3 style='color: lightblue; align-content: center'>"+smartLife[1].TitoloArg+"</h3>"+
                                             "<h4>"+ smartLife[1].DescrizioneVeloce +"</h4>"+
-                                                "<h5>"+ smartLife[2].Descrizione +"</h5>"+"<h4>"+ smartLife[1].DescrizioneVeloce +"</h4>" +
-                    "                               "<h5>"+ smartLife[2].Descrizione +"</h5>";
+                                                "<h5>"+ smartLife[i].Descrizione +"</h5>";
+
 
                 output += "</div><div class = 'col-sm-4'>" +
                               "<img src=" + smartLife[i].Immagine + "></div><div class='col-sm-2'></div></div>" +
                                 "<button type='button' class='btn btn-primary' style='margin-left: 45%; margin-bottom: 10px' >SCOPRI I DETTAGLI</button>" +
                                     "</div>";
-               
+        }
+
 
 
             $("#casa_all").html(output);

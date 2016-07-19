@@ -179,7 +179,6 @@ function getPromMobile() {
 
 
         },
-
         error: function (request, error) {
             console.log("Error");
         }
@@ -233,7 +232,7 @@ function getPromMobileFisso() {
                 $("#p_title").html("Offerte Mobile più fisso");
                 $("#p_subtitle").html("Tutto insieme con la semplicità e convenienza di un unico conto.");
                 $("#my_breadcrumb").html("<li><a href='TimIndex.html'>Home</a></li><li><a href='#'>Promozioni</a></li><li><a href='#'>Mobile più fisso</a></li>");
-            }
+            });
 
             //$("#prom_mobile").html(output);
             $("#prom_fisso_mobile").html(output);

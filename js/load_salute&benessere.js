@@ -73,9 +73,15 @@ function getSalute2() {
                     "<h3 style='color: lightblue; align-content: center'>"+smartLife[i].TitoloArg+"</h3>"+
                     "<h5>"+ smartLife[i].Descrizione +"</h5>";
                 output += "</div><div class = 'col-sm-4'>" +
-                    "<img style='width: 45vw; height: 30vw' class=' img-responsive' src=" + smartLife[i].Immagine + "></div><div class='col-sm-2'></div></div>" +
-                    "<button type='button' class='btn btn-primary' style='margin-left: 45%; margin-bottom: 10px' >SCOPRI I DETTAGLI</button>" +
-                    "</div>";
+                    "<img style='width: 45vw; height: 30vw' class=' img-responsive' src=" + smartLife[i].Immagine + "></div><div class='col-sm-2'></div></div>";
+                    if(i == 0){
+                        output += "<a href='Device_Detail.html?id=2#tv_smartliving' >"
+                    }
+                output += "<button type='button' class='btn btn-primary' style='margin-left: 45%; margin-bottom: 10px' >SCOPRI I DETTAGLI</button>";
+                    if(i == 0){
+                        output += "</a>";
+                    }
+                output +="</div>";
 
             }
 
