@@ -2,12 +2,12 @@
 
 #jumbotron_logo {
     margin: 0;
-    padding: 10px;
+    padding: 0.8vw;
     background-color: #f9f9f9;
 }
 
 #jumbotron_logo > img {
-    height: 50px;
+    height: 4vw;
 }
 
 .navbar {
@@ -77,7 +77,7 @@
 /* Add a gray background color and some padding to the footer */
 #my_footer {
     background-color: #004990;
-    padding: 5px;
+    padding: 0.5vw;
     clear: both;
     position: relative;
     bottom: 0;
@@ -98,19 +98,14 @@
 /* MAXI CATEGORIE ASSISTENZA / HIGHLIGHTS */
 
 #assistenza_category > h4 {
-    padding-bottom: 2px;
-    padding-top: 14px;
+    padding-bottom: 0.2vw;
+    padding-top: 0.8vw;
     margin: 0;
 }
 
 #assistenza_category > h2 {
-    padding-bottom: 3px;
+    padding-bottom: 0.2vw;
     margin: 0;
-}
-
-#assistenza_category > hr {
-    border-width: 3px;
-    border-top-color: #d9edf7;
 }
 
 #assistenza_category > a:visited {
@@ -136,29 +131,26 @@
 }
 
 #p_title{
-    font-size: 40px;
+    font-size: 3vw;
     font-weight: 800;
-    padding-top: 30px;
-    padding-bottom: 3px;
-    padding-left: 5px;
+    padding-top: 3vw;
+    padding-bottom: 0.3vw;
+    padding-left: 1vw;
     margin: 0;
 }
 
 #p_subtitle {
-    font-size: 25px;
-    padding-left: 5px;
+    font-size: 2vw;
+    padding-left: 1vw;
 }
 
 #my_breadcrumb {
     background-color: #d9edf7;
-    padding-left: 8px;
     margin: 0;
 }
 
 #my_breadcrumb > li {
-    padding-top: 2px;
-    padding-bottom: 2px;
-    font-size: 15px;
+    font-size: 1.2vw;
 }
 
 #my_breadcrumb > li > a:visited {
@@ -172,45 +164,34 @@
     padding: 0;
     margin: 0;
     text-align: right;
-    width: 40%;
-    font-size: 20px;
+    width: 37%;
+    font-size: 1.8vw;
 }
 
 .hl_right{
     padding-left: 1em;
     margin: 0;
     text-align: left;
-    font-size: 20px;
+    font-size: 1.8vw;
 }
 
 /* END HIGHLIGHTS */
 
 /* PROGETTI-INNOVAZIONI */
 
-#pro_inn_container > hr {
-    border-width: 3px;
-    border-top-color: #d9edf7;
-}
-
 #pro_inn_container > div.row > div.col-sm-6 > img {
-    height: 300px;
-    width: 440px;
-    float: right;
-    padding-right: 1em;
-}
-
-#pro_inn_container > div.row > div.col-sm-6 {
-    float: left;
-    padding-left: 1em;
+    height: 25vw;
+    width: 40vw;
 }
 
 #pro_inn_container > div.row > div.col-sm-6 > p.pro_inn_subtitle{
-    font-size: 25px;
+    font-size: 2vw;
     color: #ed1c24;
 }
 
+#pro_inn_container > div.row > div.col-sm-6 > a,
 #pro_inn_container > div.row > div.col-sm-6 > p.pro_inn_descrizione {
-    font-size: 17px;
+    font-size: 1.5vw;
 }
 
 #pro_inn_container > div.row > div.col-sm-6 > a:visited {
@@ -224,3 +205,26 @@
 /* END PROGETTI-INNOVAZIONI */
 
 
+/* RIGHE */
+
+.my_hr {
+    border-width: 0.25em;
+    border-top-color: #d9edf7;
+}
+
+/* END RIGHE */
+
+/* PAGINE INTRO */
+
+#page_intro > div.row > div.col-sm-3 > a > img {
+    display: block;
+    margin: auto;
+    width: 13vw;
+    height: 11vw;
+}
+
+#page_intro > div.row > div.col-sm-3 > p {
+    background-color: aliceblue;
+    font-size: 1.25vw;
+    font-weight: 500;
+}

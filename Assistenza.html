@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>TIM Website</title>
+
+    <!-- Meta -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- JQuery & Bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <!-- Personal CSS -->
+    <link rel="stylesheet" type="text/css" href="css/mainAle.css">
+    <link rel="stylesheet" type="text/css" href="css/mainDave.css">
+    <link rel="stylesheet" type="text/css" href="css/mainSte.css">
+
+    <!-- Loading pages -->
+    <script>
+        $(document).ready(function(){
+            $("#header").load("TimHeader.html", function () {
+                $("#assistenza").addClass("active");
+            });
+            $("#footer").load("TimFooter.html");
+            $("#heading").load("TimHeading.html", function () {
+                $("#heading_col_left").html("<img class='img-responsive' src='images/assistenza_intro.jpg'>");
+                $("#p_title").html("Assistenza");
+                $("#p_subtitle").html("TIM ti ascolta");
+                $("#my_breadcrumb").html("<li>Assistenza</li>");
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+
+<!-- Header -->
+<div id="header"></div>
+
+<!-- Heading -->
+<div class="jumbotron" id="heading"></div>
+
+<!-- Container -->
+<div class="container text-center" id="page_intro">
+    <hr class="my_hr">
+    <div class="row">
+        <div class="col-sm-3">
+            <a href="Assistenza_MaxiCategorie.html?linea_servizi"><img class="img-responsive" src="images/assistenza_1.png"></a><br>
+            <p>Gestione linea e servizi</p>
+        </div>
+        <div class="col-sm-3">
+            <a href="Assistenza_MaxiCategorie.html?costi_pagamenti"><img class="img-responsive" src="images/assistenza_2.png"></a><br>
+            <p>Controllo costi e pagamenti</p>
+        </div>
+        <div class="col-sm-3">
+            <a href="Assistenza_MaxiCategorie.html?tecnico_configurazione"><img class="img-responsive" src="images/assistenza_3.png"></a><br>
+            <p>Supporto tecnico e configurazione</p>
+        </div>
+        <div class="col-sm-3">
+            <a href="Assistenza_MaxiCategorie.html?smart_life"><img class="img-responsive" src="images/assistenza_4.png"></a><br>
+            <p>Contenuti e SmartLife</p>
+        </div>
+    </div>
+    <hr class="my_hr">
+</div>
+
+<!-- Footer -->
+<div id="footer"></div>
+
+</body>
+
+</html>

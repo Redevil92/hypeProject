@@ -43,7 +43,7 @@ function getMaxCategory(max_cat){
         url: "php/getAssistenza.php", //Relative or absolute path to file.php file
         success: function(response){
             var assistance = JSON.parse(response);
-            var output = "<hr>";
+            var output = "<hr class='my_hr'>";
 
             //Selecting distinct values from 'Categoria'
 
@@ -99,7 +99,7 @@ function getMaxCategory(max_cat){
                         }
                     }
                 }
-                output+="<hr>";
+                output+="<hr class='my_hr'>";
             }
 
             $("#p_subtitle").html(max_cat);
