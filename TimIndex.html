@@ -11,19 +11,11 @@
     <link rel="stylesheet" type="text/css" href="css/mainDave.css">
     <link rel="stylesheet" type="text/css" href="css/mainSte.css">
     <script>
-        $(function(){
-            //load the TimHeader
-            $("#header").load("TimHeader.html");
-
-            //as default behaviour load the home page
-            $("#main").load("TimHome.html"); //, function() {
-               // after loading the page we should load the page manager for links (header + main div, footer doesn't contain links)
-               // $.getScript('js/pageManager.js', function() {
-                    // load dynamic links (index.html)
-                 //   clickPageLinks();
-               // });
-
-
+        $(document).ready(function(){
+            $("#header").load("TimHeader.html", function () {
+                $("#home").addClass("active");
+            });
+            $("#main").load("TimHome.html");
             $("#footer").load("TimFooter.html");
         });
     </script>
