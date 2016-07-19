@@ -1,24 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>TIM website</title>
+
+    <title>TIM Website</title>
+
+    <!-- Meta -->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- JQuery & Bootstrap -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <!-- Personal CSS -->
     <link rel="stylesheet" type="text/css" href="css/mainAle.css">
     <link rel="stylesheet" type="text/css" href="css/mainDave.css">
     <link rel="stylesheet" type="text/css" href="css/mainSte.css">
+
+    <!-- Loading pages -->
      <script>
         $(document).ready(function(){
-            $("#header").load("TimHeader.html");
+            $("#header").load("TimHeader.html", function () {
+                $("#gruppo").addClass("active");
+            });
             $("#footer").load("TimFooter.html");
             $("#heading").load("TimHeading.html", function () {
                 $("#heading_col_left").html('<img src = "images/Edifici_TIM.jpg" alt = "buildings" class = "img-responsive">');
                 $("#p_title").html("About Us");
                 $("#p_subtitle").html("Customers, investments and service distribution");
-                $("#my_breadcrumb").html("<li><a href='TimIndex.html'>Home</a></li><li>About Us</li>");
+                $("#my_breadcrumb").html("<li>About Us</li>");
             });
         });
     </script>

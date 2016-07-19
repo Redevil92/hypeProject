@@ -7,7 +7,7 @@ $(document).ready(function(){
         $("#heading_col_left").html("<img class='img-responsive' src='images/assistenza_intro.jpg'>");
         $("#p_title").html("Highlights");
         $("#p_subtitle").html("Assistenza immediata");
-        $("#my_breadcrumb").html("<li><a href='#'>Home</a></li><li>Highlights</li>");
+        $("#my_breadcrumb").html("<li>Highlights</li>");
     });
     getHighlights();
 });
