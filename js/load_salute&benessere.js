@@ -9,7 +9,7 @@ $(document).ready(function(){
         $("#heading_col_left").html("<img class='img-responsive' src='images/salute&benessere_intro.png'>");
         $("#p_title").html("Salute e Benessere");
         $("#p_subtitle").html("Scopri come Salute e Benessere possono cambiare in meglio la tua vita facendoti tornare <br>la voglia di movimento.");
-        $("#my_breadcrumb").html("<li><a href='TimIndex.html'>Home</a></li><li><a href=''>Servizi Smart Life</a></li><li><a href='#' id='current_path'>Salute e Benessere</a></li>");
+        $("#my_breadcrumb").html("<li><a href='SmartLife.html'>Servizi Smart Life</a></li><li><a href='#' id='current_path'>Salute e Benessere</a></li>");
     });
     getSalute2();
     getSalute();
