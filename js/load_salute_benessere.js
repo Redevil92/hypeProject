@@ -6,7 +6,7 @@ $(document).ready(function(){
     });
     $("#footer").load("TimFooter.html");
     $("#heading").load("TimHeading.html", function () {
-        $("#heading_col_left").html("<img class='img-responsive' src='images/salute&benessere_intro.png'>");
+        $("#heading_col_left").html("<img class='img-responsive' src='images/salute_benessere_intro.png'>");
         $("#p_title").html("Salute e Benessere");
         $("#p_subtitle").html("Scopri come Salute e Benessere possono cambiare in meglio la tua vita facendoti tornare <br>la voglia di movimento.");
         $("#my_breadcrumb").html("<li><a href='SmartLife.html'>Servizi Smart Life</a></li><li><a href='#' id='current_path'>Salute e Benessere</a></li>");

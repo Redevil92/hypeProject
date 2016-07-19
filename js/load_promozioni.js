@@ -13,16 +13,16 @@ function ready(){
     var url = window.location.pathname;
     console.log(url);
     switch(url){
-        case '/hypeProject/Promozioni_fisso.html':
+        case '/Promozioni_fisso.html':
             getPromozioneFisso();
             break;
-        case '/hypeProject/Promozioni_mobile.html':
+        case '/Promozioni_mobile.html':
             getPromMobile();
             break;
-        case '/hypeProject/Promozioni_fisso&mobile.html':
+        case '/Promozioni_fisso_mobile.html':
             getPromMobileFisso();
             break;
-        case '/hypeProject/Promozioni_smartLife.html':
+        case '/Promozioni_smartLife.html':
             getSmartProm();
             break;
         default:

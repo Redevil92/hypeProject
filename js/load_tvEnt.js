@@ -7,7 +7,7 @@ $(document).ready(function(){
         $("#heading_col_left").html("<img class='img-responsive' src='images/smart_tv_intro.png'>");
         $("#p_title").html("TV e Entertainement");
         $("#p_subtitle").html("SERIE TV, FILM, MUSICA, GIOCHI E CALCIO. <br>Scopri il tipo di intrattenimento che preferisci. Il divertimento comincia subito! Quando vuoi e come vuoi.");
-        $("#my_breadcrumb").html("<li><a href='SmartLife.html'>Servizi Smart Life</a></li><li><a href='#' id='current_path'>TV e Entertainemnet</a></li>");
+        $("#my_breadcrumb").html("<li><a href='SmartLife.html'>Servizi Smart Life</a></li>TV e Entertainemnet");
     });
     getTvEnt();
     getTvSerieAInfo();
