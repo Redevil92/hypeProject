@@ -31,7 +31,6 @@ function findMaxCategory() {
         default:
             break;
     }
-    console.log(max_cat);
     getMaxCategory(max_cat);
 }
 

@@ -1,5 +1,7 @@
 $(document).ready(function(){
-    $("#header").load("TimHeader.html");
+    $("#header").load("TimHeader.html", function () {
+        $("#highlights").addClass("active");
+    });
     $("#footer").load("TimFooter.html");
     $("#heading").load("TimHeading.html", function () {
         $("#heading_col_left").html("<img class='img-responsive' src='images/assistenza_intro.jpg'>");
