@@ -7,7 +7,7 @@ $(document).ready(function () {
         $("#heading_col_left").html("<img class='img-responsive' src='images/innovazioni_intro.png'>");
         $("#p_title").html("Offerte Smart Life");
         $("#p_subtitle").html("Le migliori offerte per la tua linea mobile.");
-        $("#my_breadcrumb").html("<li><a href='TimIndex.html'>Home</a></li><li><a href='#'>Promozioni</a></li><li><a href='#'>Mobile</a></li><li><a href='#'>TIM Young</a></li>");
+        $("#my_breadcrumb").html("<li></li><li><a href='Promozioni.html'>Promozioni</a></li><li><a href='Promozioni_mobile.html'>Mobile</a></li><li><a href='#'>TIM Young</a></li>");
     });
     getID();
 });
@@ -39,7 +39,7 @@ function getTimInfo(id) {
                 "<h4>" + promozioni[i].DescrizioneVeloce + "</h4>" +
                 "<h5>" + promozioni[i].Descrizione + "</h5>";
             output += "</div><div class = 'col-sm-5'>" +
-                "<img src=" + promozioni[i].Immagine + "><button type='button' class='btn btn-danger' style='margin-left: 45%; margin-bottom: 10px' >ATTIVA</button>" +
+                "<img src=" + promozioni[i].Immagine + "><a href='Promozioni_mobile_young_form.html'><button type='button' class='btn btn-danger' style='margin-left: 45%; margin-bottom: 10px' >ATTIVA</button></a>" +
                 "<h4 style='color: red; margin-left: 45%'>" + promozioni[i].Prezzo + "</h4> </div><div class='col-sm-1'></div></div>" +
                 "</div>";
 
